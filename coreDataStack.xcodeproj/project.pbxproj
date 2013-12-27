@@ -14,7 +14,6 @@
 		0905784B186DA30A0005308C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09057849186DA30A0005308C /* InfoPlist.strings */; };
 		0905784D186DA30A0005308C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905784C186DA30A0005308C /* main.m */; };
 		09057851186DA30A0005308C /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057850186DA30A0005308C /* DBAppDelegate.m */; };
-		09057854186DA30A0005308C /* coreDataStack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09057852186DA30A0005308C /* coreDataStack.xcdatamodeld */; };
 		09057856186DA30A0005308C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09057855186DA30A0005308C /* Images.xcassets */; };
 		0905785D186DA30A0005308C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905785C186DA30A0005308C /* XCTest.framework */; };
 		0905785E186DA30A0005308C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905783E186DA30A0005308C /* Foundation.framework */; };
@@ -23,6 +22,12 @@
 		09057868186DA30A0005308C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09057866186DA30A0005308C /* InfoPlist.strings */; };
 		0905786A186DA30A0005308C /* coreDataStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057869186DA30A0005308C /* coreDataStackTests.m */; };
 		09057875186DA43A0005308C /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057874186DA43A0005308C /* DBCoreDataStack.m */; };
+		0905788A186DE31C0005308C /* menuCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09057888186DE31C0005308C /* menuCoreDataModel.xcdatamodeld */; };
+		09057893186DE56C0005308C /* Identity.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057892186DE56C0005308C /* Identity.m */; };
+		09057896186DE56D0005308C /* CategoryDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057895186DE56D0005308C /* CategoryDrink.m */; };
+		09057899186DE56D0005308C /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057898186DE56D0005308C /* Photo.m */; };
+		0905789C186DE56D0005308C /* SquareMenuAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905789B186DE56D0005308C /* SquareMenuAd.m */; };
+		0905789F186DE56D0005308C /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905789E186DE56D0005308C /* Drink.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +52,6 @@
 		0905784E186DA30A0005308C /* coreDataStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "coreDataStack-Prefix.pch"; sourceTree = "<group>"; };
 		0905784F186DA30A0005308C /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
 		09057850186DA30A0005308C /* DBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
-		09057853186DA30A0005308C /* coreDataStack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreDataStack.xcdatamodel; sourceTree = "<group>"; };
 		09057855186DA30A0005308C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0905785B186DA30A0005308C /* coreDataStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreDataStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0905785C186DA30A0005308C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -56,6 +60,17 @@
 		09057869186DA30A0005308C /* coreDataStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreDataStackTests.m; sourceTree = "<group>"; };
 		09057873186DA43A0005308C /* DBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoreDataStack.h; sourceTree = "<group>"; };
 		09057874186DA43A0005308C /* DBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoreDataStack.m; sourceTree = "<group>"; };
+		09057889186DE31C0005308C /* menuCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = menuCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		09057891186DE56C0005308C /* Identity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identity.h; sourceTree = "<group>"; };
+		09057892186DE56C0005308C /* Identity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Identity.m; sourceTree = "<group>"; };
+		09057894186DE56D0005308C /* CategoryDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryDrink.h; sourceTree = "<group>"; };
+		09057895186DE56D0005308C /* CategoryDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDrink.m; sourceTree = "<group>"; };
+		09057897186DE56D0005308C /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		09057898186DE56D0005308C /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		0905789A186DE56D0005308C /* SquareMenuAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMenuAd.h; sourceTree = "<group>"; };
+		0905789B186DE56D0005308C /* SquareMenuAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMenuAd.m; sourceTree = "<group>"; };
+		0905789D186DE56D0005308C /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		0905789E186DE56D0005308C /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +135,8 @@
 			children = (
 				09057873186DA43A0005308C /* DBCoreDataStack.h */,
 				09057874186DA43A0005308C /* DBCoreDataStack.m */,
-				09057852186DA30A0005308C /* coreDataStack.xcdatamodeld */,
+				09057888186DE31C0005308C /* menuCoreDataModel.xcdatamodeld */,
+				090578A0186DE58A0005308C /* NSManagedObjectSubclass */,
 				0905784F186DA30A0005308C /* DBAppDelegate.h */,
 				09057850186DA30A0005308C /* DBAppDelegate.m */,
 				09057855186DA30A0005308C /* Images.xcassets */,
@@ -156,6 +172,23 @@
 				09057866186DA30A0005308C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		090578A0186DE58A0005308C /* NSManagedObjectSubclass */ = {
+			isa = PBXGroup;
+			children = (
+				0905789D186DE56D0005308C /* Drink.h */,
+				0905789E186DE56D0005308C /* Drink.m */,
+				0905789A186DE56D0005308C /* SquareMenuAd.h */,
+				0905789B186DE56D0005308C /* SquareMenuAd.m */,
+				09057897186DE56D0005308C /* Photo.h */,
+				09057898186DE56D0005308C /* Photo.m */,
+				09057894186DE56D0005308C /* CategoryDrink.h */,
+				09057895186DE56D0005308C /* CategoryDrink.m */,
+				09057891186DE56C0005308C /* Identity.h */,
+				09057892186DE56C0005308C /* Identity.m */,
+			);
+			name = NSManagedObjectSubclass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,10 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09057899186DE56D0005308C /* Photo.m in Sources */,
 				09057851186DA30A0005308C /* DBAppDelegate.m in Sources */,
-				09057854186DA30A0005308C /* coreDataStack.xcdatamodeld in Sources */,
 				0905784D186DA30A0005308C /* main.m in Sources */,
+				09057896186DE56D0005308C /* CategoryDrink.m in Sources */,
+				0905789C186DE56D0005308C /* SquareMenuAd.m in Sources */,
+				09057893186DE56C0005308C /* Identity.m in Sources */,
+				0905789F186DE56D0005308C /* Drink.m in Sources */,
 				09057875186DA43A0005308C /* DBCoreDataStack.m in Sources */,
+				0905788A186DE31C0005308C /* menuCoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +498,7 @@
 				0905786F186DA30A0005308C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09057870186DA30A0005308C /* Build configuration list for PBXNativeTarget "coreDataStackTests" */ = {
 			isa = XCConfigurationList;
@@ -468,17 +507,18 @@
 				09057872186DA30A0005308C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		09057852186DA30A0005308C /* coreDataStack.xcdatamodeld */ = {
+		09057888186DE31C0005308C /* menuCoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				09057853186DA30A0005308C /* coreDataStack.xcdatamodel */,
+				09057889186DE31C0005308C /* menuCoreDataModel.xcdatamodel */,
 			);
-			currentVersion = 09057853186DA30A0005308C /* coreDataStack.xcdatamodel */;
-			path = coreDataStack.xcdatamodeld;
+			currentVersion = 09057889186DE31C0005308C /* menuCoreDataModel.xcdatamodel */;
+			path = menuCoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
