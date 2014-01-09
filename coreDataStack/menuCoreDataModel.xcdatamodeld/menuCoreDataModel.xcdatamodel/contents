@@ -16,8 +16,7 @@
         <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="alcool" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="brand" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="containing" attributeType="String" defaultValueString="0" syncable="YES">
+        <attribute name="containing" optional="YES" attributeType="String" defaultValueString="0" syncable="YES">
             <userInfo>
                 <entry key="0" value="glass"/>
                 <entry key="1" value="pitcher"/>
@@ -25,7 +24,6 @@
             </userInfo>
         </attribute>
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="ingredient" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -35,7 +33,8 @@
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="volume" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryDrink" inverseName="drinks" inverseEntity="CategoryDrink" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryDrink" inverseName="drinks" inverseEntity="CategoryDrink" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="drinks" inverseEntity="Photo" syncable="YES"/>
     </entity>
     <entity name="Identity" representedClassName="Identity" syncable="YES">
         <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
@@ -50,12 +49,12 @@
     <entity name="Photo" representedClassName="Photo" syncable="YES">
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="syncStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="usedFor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drinks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Drink" inverseName="photos" inverseEntity="Drink" syncable="YES"/>
     </entity>
     <entity name="SquareMenuAd" representedClassName="SquareMenuAd" syncable="YES">
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
@@ -67,10 +66,10 @@
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CategoryDrink" positionX="-63" positionY="-27" width="128" height="193"/>
-        <element name="Drink" positionX="142" positionY="-162" width="128" height="298"/>
-        <element name="Identity" positionX="-108" positionY="-261" width="128" height="165"/>
-        <element name="Photo" positionX="-281" positionY="-153" width="128" height="165"/>
-        <element name="SquareMenuAd" positionX="-263" positionY="102" width="128" height="150"/>
+        <element name="CategoryDrink" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Drink" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Identity" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Photo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SquareMenuAd" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

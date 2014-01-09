@@ -8,7 +8,6 @@
 
 
 #import "DBCoreDataStack.h"
-#import <CoreData/CoreData.h>
 
 @implementation DBCoreDataStack
 

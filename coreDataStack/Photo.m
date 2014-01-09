@@ -1,23 +1,24 @@
 //
 //  Photo.m
-//  coreDataStack
+//  syncWithAFNetworking
 //
-//  Created by Olivier Delecueillerie on 27/12/2013.
-//  Copyright (c) 2013 Olivier Delecueillerie. All rights reserved.
+//  Created by Olivier Delecueillerie on 05/01/2014.
+//  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import "Photo.h"
+#import "Drink.h"
 
 
 @implementation Photo
 
 @dynamic createdAt;
 @dynamic image;
-@dynamic index;
 @dynamic objectId;
 @dynamic syncStatus;
+@dynamic tags;
 @dynamic title;
 @dynamic updatedAt;
-@dynamic usedFor;
+@dynamic drinks;
 
 @end

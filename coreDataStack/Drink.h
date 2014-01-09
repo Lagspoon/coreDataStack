@@ -2,14 +2,14 @@
 //  Drink.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 27/12/2013.
+//  Created by Olivier Delecueillerie on 28/12/2013.
 //  Copyright (c) 2013 Olivier Delecueillerie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class CategoryDrink;
+@class CategoryDrink, Photo;
 
 @interface Drink : NSManagedObject
 
@@ -30,5 +30,14 @@
 @property (nonatomic, retain) NSDate * updatedAt;
 @property (nonatomic, retain) NSNumber * volume;
 @property (nonatomic, retain) CategoryDrink *category;
+@property (nonatomic, retain) NSSet *photos;
+@end
+
+@interface Drink (CoreDataGeneratedAccessors)
+
+- (void)addPhotosObject:(Photo *)value;
+- (void)removePhotosObject:(Photo *)value;
+- (void)addPhotos:(NSSet *)values;
+- (void)removePhotos:(NSSet *)values;
 
 @end
