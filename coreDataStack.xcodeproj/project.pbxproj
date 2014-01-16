@@ -13,8 +13,6 @@
 		09057845186DA30A0005308C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057844186DA30A0005308C /* CoreData.framework */; };
 		0905784B186DA30A0005308C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09057849186DA30A0005308C /* InfoPlist.strings */; };
 		0905784D186DA30A0005308C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905784C186DA30A0005308C /* main.m */; };
-		09057851186DA30A0005308C /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057850186DA30A0005308C /* DBAppDelegate.m */; };
-		09057854186DA30A0005308C /* coreDataStack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09057852186DA30A0005308C /* coreDataStack.xcdatamodeld */; };
 		09057856186DA30A0005308C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09057855186DA30A0005308C /* Images.xcassets */; };
 		0905785D186DA30A0005308C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905785C186DA30A0005308C /* XCTest.framework */; };
 		0905785E186DA30A0005308C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905783E186DA30A0005308C /* Foundation.framework */; };
@@ -22,6 +20,12 @@
 		09057860186DA30A0005308C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057844186DA30A0005308C /* CoreData.framework */; };
 		09057868186DA30A0005308C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09057866186DA30A0005308C /* InfoPlist.strings */; };
 		0905786A186DA30A0005308C /* coreDataStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057869186DA30A0005308C /* coreDataStackTests.m */; };
+		09A8C1AE187F68DA009CDA2B /* CategoryDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A8C19F187F68DA009CDA2B /* CategoryDrink.m */; };
+		09A8C1AF187F68DA009CDA2B /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A8C1A1187F68DA009CDA2B /* DBAppDelegate.m */; };
+		09A8C1B0187F68DA009CDA2B /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A8C1A3187F68DA009CDA2B /* DBCoreDataStack.m */; };
+		09A8C1B3187F68DA009CDA2B /* menuCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09A8C1A8187F68DA009CDA2B /* menuCoreDataModel.xcdatamodeld */; };
+		09A8C1B5187F68DA009CDA2B /* SquareMenuAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A8C1AD187F68DA009CDA2B /* SquareMenuAd.m */; };
+		09A8C1B8187FE392009CDA2B /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A8C1B7187FE392009CDA2B /* Drink.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +48,23 @@
 		0905784A186DA30A0005308C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0905784C186DA30A0005308C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0905784E186DA30A0005308C /* coreDataStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "coreDataStack-Prefix.pch"; sourceTree = "<group>"; };
-		0905784F186DA30A0005308C /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
-		09057850186DA30A0005308C /* DBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
-		09057853186DA30A0005308C /* coreDataStack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreDataStack.xcdatamodel; sourceTree = "<group>"; };
 		09057855186DA30A0005308C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0905785B186DA30A0005308C /* coreDataStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreDataStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0905785C186DA30A0005308C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		09057865186DA30A0005308C /* coreDataStackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coreDataStackTests-Info.plist"; sourceTree = "<group>"; };
 		09057867186DA30A0005308C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09057869186DA30A0005308C /* coreDataStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreDataStackTests.m; sourceTree = "<group>"; };
+		09A8C19E187F68DA009CDA2B /* CategoryDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryDrink.h; sourceTree = "<group>"; };
+		09A8C19F187F68DA009CDA2B /* CategoryDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDrink.m; sourceTree = "<group>"; };
+		09A8C1A0187F68DA009CDA2B /* DBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
+		09A8C1A1187F68DA009CDA2B /* DBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
+		09A8C1A2187F68DA009CDA2B /* DBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoreDataStack.h; sourceTree = "<group>"; };
+		09A8C1A3187F68DA009CDA2B /* DBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoreDataStack.m; sourceTree = "<group>"; };
+		09A8C1A9187F68DA009CDA2B /* menuCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = menuCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		09A8C1AC187F68DA009CDA2B /* SquareMenuAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMenuAd.h; sourceTree = "<group>"; };
+		09A8C1AD187F68DA009CDA2B /* SquareMenuAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMenuAd.m; sourceTree = "<group>"; };
+		09A8C1B6187FE392009CDA2B /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		09A8C1B7187FE392009CDA2B /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +127,13 @@
 		09057846186DA30A0005308C /* coreDataStack */ = {
 			isa = PBXGroup;
 			children = (
-				0905784F186DA30A0005308C /* DBAppDelegate.h */,
-				09057850186DA30A0005308C /* DBAppDelegate.m */,
+				09A8C1A8187F68DA009CDA2B /* menuCoreDataModel.xcdatamodeld */,
+				09A8C1A0187F68DA009CDA2B /* DBAppDelegate.h */,
+				09A8C1A1187F68DA009CDA2B /* DBAppDelegate.m */,
+				09A8C1A2187F68DA009CDA2B /* DBCoreDataStack.h */,
+				09A8C1A3187F68DA009CDA2B /* DBCoreDataStack.m */,
+				09A8C1B9187FE3B0009CDA2B /* managed Object */,
 				09057855186DA30A0005308C /* Images.xcassets */,
-				09057852186DA30A0005308C /* coreDataStack.xcdatamodeld */,
 				09057847186DA30A0005308C /* Supporting Files */,
 			);
 			path = coreDataStack;
@@ -151,6 +166,19 @@
 				09057866186DA30A0005308C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09A8C1B9187FE3B0009CDA2B /* managed Object */ = {
+			isa = PBXGroup;
+			children = (
+				09A8C1B6187FE392009CDA2B /* Drink.h */,
+				09A8C1B7187FE392009CDA2B /* Drink.m */,
+				09A8C19E187F68DA009CDA2B /* CategoryDrink.h */,
+				09A8C19F187F68DA009CDA2B /* CategoryDrink.m */,
+				09A8C1AC187F68DA009CDA2B /* SquareMenuAd.h */,
+				09A8C1AD187F68DA009CDA2B /* SquareMenuAd.m */,
+			);
+			name = "managed Object";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09057851186DA30A0005308C /* DBAppDelegate.m in Sources */,
-				09057854186DA30A0005308C /* coreDataStack.xcdatamodeld in Sources */,
+				09A8C1AE187F68DA009CDA2B /* CategoryDrink.m in Sources */,
+				09A8C1B3187F68DA009CDA2B /* menuCoreDataModel.xcdatamodeld in Sources */,
+				09A8C1AF187F68DA009CDA2B /* DBAppDelegate.m in Sources */,
+				09A8C1B5187F68DA009CDA2B /* SquareMenuAd.m in Sources */,
 				0905784D186DA30A0005308C /* main.m in Sources */,
+				09A8C1B8187FE392009CDA2B /* Drink.m in Sources */,
+				09A8C1B0187F68DA009CDA2B /* DBCoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +486,7 @@
 				0905786F186DA30A0005308C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09057870186DA30A0005308C /* Build configuration list for PBXNativeTarget "coreDataStackTests" */ = {
 			isa = XCConfigurationList;
@@ -462,17 +495,18 @@
 				09057872186DA30A0005308C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		09057852186DA30A0005308C /* coreDataStack.xcdatamodeld */ = {
+		09A8C1A8187F68DA009CDA2B /* menuCoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				09057853186DA30A0005308C /* coreDataStack.xcdatamodel */,
+				09A8C1A9187F68DA009CDA2B /* menuCoreDataModel.xcdatamodel */,
 			);
-			currentVersion = 09057853186DA30A0005308C /* coreDataStack.xcdatamodel */;
-			path = coreDataStack.xcdatamodeld;
+			currentVersion = 09A8C1A9187F68DA009CDA2B /* menuCoreDataModel.xcdatamodel */;
+			path = menuCoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
