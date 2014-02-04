@@ -23,11 +23,10 @@
 		0905786A186DA30A0005308C /* coreDataStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057869186DA30A0005308C /* coreDataStackTests.m */; };
 		09057875186DA43A0005308C /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057874186DA43A0005308C /* DBCoreDataStack.m */; };
 		0905788A186DE31C0005308C /* menuCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09057888186DE31C0005308C /* menuCoreDataModel.xcdatamodeld */; };
-		09057893186DE56C0005308C /* Identity.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057892186DE56C0005308C /* Identity.m */; };
-		09057896186DE56D0005308C /* CategoryDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057895186DE56D0005308C /* CategoryDrink.m */; };
-		09057899186DE56D0005308C /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057898186DE56D0005308C /* Photo.m */; };
-		0905789C186DE56D0005308C /* SquareMenuAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905789B186DE56D0005308C /* SquareMenuAd.m */; };
-		0905789F186DE56D0005308C /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905789E186DE56D0005308C /* Drink.m */; };
+		090C0DF818A0F11400CE5E60 /* DBCoreDataStack+HumanReadingEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C0DED18A0F11400CE5E60 /* DBCoreDataStack+HumanReadingEntities.m */; };
+		090C0DFA18A0F11400CE5E60 /* Kid.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C0DF218A0F11400CE5E60 /* Kid.m */; };
+		090C0DFB18A0F11400CE5E60 /* Spelling.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C0DF418A0F11400CE5E60 /* Spelling.m */; };
+		090C0DFC18A0F11400CE5E60 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 090C0DF618A0F11400CE5E60 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,16 +60,15 @@
 		09057873186DA43A0005308C /* DBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoreDataStack.h; sourceTree = "<group>"; };
 		09057874186DA43A0005308C /* DBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoreDataStack.m; sourceTree = "<group>"; };
 		09057889186DE31C0005308C /* menuCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = menuCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
-		09057891186DE56C0005308C /* Identity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identity.h; sourceTree = "<group>"; };
-		09057892186DE56C0005308C /* Identity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Identity.m; sourceTree = "<group>"; };
-		09057894186DE56D0005308C /* CategoryDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryDrink.h; sourceTree = "<group>"; };
-		09057895186DE56D0005308C /* CategoryDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDrink.m; sourceTree = "<group>"; };
-		09057897186DE56D0005308C /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		09057898186DE56D0005308C /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		0905789A186DE56D0005308C /* SquareMenuAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMenuAd.h; sourceTree = "<group>"; };
-		0905789B186DE56D0005308C /* SquareMenuAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMenuAd.m; sourceTree = "<group>"; };
-		0905789D186DE56D0005308C /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
-		0905789E186DE56D0005308C /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
+		090C0DED18A0F11400CE5E60 /* DBCoreDataStack+HumanReadingEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DBCoreDataStack+HumanReadingEntities.m"; sourceTree = "<group>"; };
+		090C0DF018A0F11400CE5E60 /* DBCoreDataStack+HumanReadingEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBCoreDataStack+HumanReadingEntities.h"; sourceTree = "<group>"; };
+		090C0DF118A0F11400CE5E60 /* Kid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kid.h; sourceTree = "<group>"; };
+		090C0DF218A0F11400CE5E60 /* Kid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kid.m; sourceTree = "<group>"; };
+		090C0DF318A0F11400CE5E60 /* Spelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spelling.h; sourceTree = "<group>"; };
+		090C0DF418A0F11400CE5E60 /* Spelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spelling.m; sourceTree = "<group>"; };
+		090C0DF518A0F11400CE5E60 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		090C0DF618A0F11400CE5E60 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		090C0DF718A0F11400CE5E60 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +131,8 @@
 		09057846186DA30A0005308C /* coreDataStack */ = {
 			isa = PBXGroup;
 			children = (
+				090C0DF018A0F11400CE5E60 /* DBCoreDataStack+HumanReadingEntities.h */,
+				090C0DED18A0F11400CE5E60 /* DBCoreDataStack+HumanReadingEntities.m */,
 				09057873186DA43A0005308C /* DBCoreDataStack.h */,
 				09057874186DA43A0005308C /* DBCoreDataStack.m */,
 				09057888186DE31C0005308C /* menuCoreDataModel.xcdatamodeld */,
@@ -177,16 +177,13 @@
 		090578A0186DE58A0005308C /* NSManagedObjectSubclass */ = {
 			isa = PBXGroup;
 			children = (
-				0905789D186DE56D0005308C /* Drink.h */,
-				0905789E186DE56D0005308C /* Drink.m */,
-				0905789A186DE56D0005308C /* SquareMenuAd.h */,
-				0905789B186DE56D0005308C /* SquareMenuAd.m */,
-				09057897186DE56D0005308C /* Photo.h */,
-				09057898186DE56D0005308C /* Photo.m */,
-				09057894186DE56D0005308C /* CategoryDrink.h */,
-				09057895186DE56D0005308C /* CategoryDrink.m */,
-				09057891186DE56C0005308C /* Identity.h */,
-				09057892186DE56C0005308C /* Identity.m */,
+				090C0DF118A0F11400CE5E60 /* Kid.h */,
+				090C0DF218A0F11400CE5E60 /* Kid.m */,
+				090C0DF318A0F11400CE5E60 /* Spelling.h */,
+				090C0DF418A0F11400CE5E60 /* Spelling.m */,
+				090C0DF518A0F11400CE5E60 /* Test.h */,
+				090C0DF618A0F11400CE5E60 /* Test.m */,
+				090C0DF718A0F11400CE5E60 /* Word.h */,
 			);
 			name = NSManagedObjectSubclass;
 			sourceTree = "<group>";
@@ -287,14 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09057899186DE56D0005308C /* Photo.m in Sources */,
 				09057851186DA30A0005308C /* DBAppDelegate.m in Sources */,
+				090C0DFA18A0F11400CE5E60 /* Kid.m in Sources */,
+				090C0DFC18A0F11400CE5E60 /* Test.m in Sources */,
+				090C0DFB18A0F11400CE5E60 /* Spelling.m in Sources */,
 				0905784D186DA30A0005308C /* main.m in Sources */,
-				09057896186DE56D0005308C /* CategoryDrink.m in Sources */,
-				0905789C186DE56D0005308C /* SquareMenuAd.m in Sources */,
-				09057893186DE56C0005308C /* Identity.m in Sources */,
-				0905789F186DE56D0005308C /* Drink.m in Sources */,
 				09057875186DA43A0005308C /* DBCoreDataStack.m in Sources */,
+				090C0DF818A0F11400CE5E60 /* DBCoreDataStack+HumanReadingEntities.m in Sources */,
 				0905788A186DE31C0005308C /* menuCoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
