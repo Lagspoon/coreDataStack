@@ -2,14 +2,14 @@
 //  Test.h
 //  spellingForMyKids
 //
-//  Created by Olivier Delecueillerie on 02/02/2014.
+//  Created by Olivier Delecueillerie on 11/02/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Kid;
+@class Kid, Spelling;
 
 @interface Test : NSManagedObject
 
@@ -17,7 +17,7 @@
 @property (nonatomic, retain) NSNumber * result;
 @property (nonatomic, retain) NSDate * startedAt;
 @property (nonatomic, retain) NSSet *kid;
-@property (nonatomic, retain) NSManagedObject *spelling;
+@property (nonatomic, retain) Spelling *spelling;
 @end
 
 @interface Test (CoreDataGeneratedAccessors)

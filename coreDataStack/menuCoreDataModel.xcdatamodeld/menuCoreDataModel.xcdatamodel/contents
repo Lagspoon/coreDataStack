@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Kid" representedClassName="Kid" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES">
+            <userInfo>
+                <entry key="type" value="image"/>
+            </userInfo>
+        </attribute>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="test" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="kid" inverseEntity="Test" syncable="YES"/>
         <userInfo>
             <entry key="label" value="kid"/>
@@ -28,9 +32,17 @@
         </userInfo>
     </entity>
     <entity name="Word" representedClassName="Word" syncable="YES">
-        <attribute name="audio" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="audio" optional="YES" attributeType="Binary" syncable="YES">
+            <userInfo>
+                <entry key="type" value="audio"/>
+            </userInfo>
+        </attribute>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES">
+            <userInfo>
+                <entry key="type" value="image"/>
+            </userInfo>
+        </attribute>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="spelling" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spelling" inverseName="words" inverseEntity="Spelling" syncable="YES"/>
         <userInfo>
             <entry key="label" value="word"/>

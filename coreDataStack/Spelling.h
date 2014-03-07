@@ -2,7 +2,7 @@
 //  Spelling.h
 //  spellingForMyKids
 //
-//  Created by Olivier Delecueillerie on 02/02/2014.
+//  Created by Olivier Delecueillerie on 11/02/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -15,8 +15,8 @@
 
 @property (nonatomic, retain) NSString * explication;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *words;
 @property (nonatomic, retain) Test *tests;
+@property (nonatomic, retain) NSSet *words;
 @end
 
 @interface Spelling (CoreDataGeneratedAccessors)
