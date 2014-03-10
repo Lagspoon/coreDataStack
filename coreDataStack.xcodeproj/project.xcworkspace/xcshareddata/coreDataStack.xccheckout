@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>00035489-FA52-443F-910D-5407F96A1247</string>
+	<string>754EFD06-5B5E-4155-BF2D-BC9DF2F08354</string>
 	<key>IDESourceControlProjectName</key>
 	<string>coreDataStack</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>38EEAF12-A13B-4CF3-A7C7-669CD473F4D9</key>
+		<key>D1D7C98E-E6C9-4CB5-8B9F-19FA2204F69C</key>
 		<string>ssh://github.com/Lagspoon/coreDataStack.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>coreDataStack.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>38EEAF12-A13B-4CF3-A7C7-669CD473F4D9</key>
+		<key>D1D7C98E-E6C9-4CB5-8B9F-19FA2204F69C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>38EEAF12-A13B-4CF3-A7C7-669CD473F4D9</string>
+	<string>D1D7C98E-E6C9-4CB5-8B9F-19FA2204F69C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>38EEAF12-A13B-4CF3-A7C7-669CD473F4D9</string>
+			<string>D1D7C98E-E6C9-4CB5-8B9F-19FA2204F69C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>coreDataStack</string>
 		</dict>
