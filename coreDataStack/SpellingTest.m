@@ -1,28 +1,25 @@
 //
-//  Test.m
+//  SpellingTest.m
 //  spellingForMyKids
 //
 //  Created by Olivier Delecueillerie on 26/05/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
-#import "Test.h"
+#import "SpellingTest.h"
 #import "Kid.h"
 #import "Spelling.h"
-#import "SpellingTest.h"
-#import "Word.h"
+#import "Test.h"
 
 
-@implementation Test
+@implementation SpellingTest
 
-@dynamic endedAt;
-@dynamic result;
 @dynamic startedAt;
-@dynamic input;
+@dynamic endedAt;
 @dynamic mode;
+@dynamic points;
 @dynamic kid;
+@dynamic wordTests;
 @dynamic spelling;
-@dynamic word;
-@dynamic spellingTest;
 
 @end
