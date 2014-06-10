@@ -23,6 +23,15 @@
 		0905786A186DA30A0005308C /* coreDataStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057869186DA30A0005308C /* coreDataStackTests.m */; };
 		09057875186DA43A0005308C /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057874186DA43A0005308C /* DBCoreDataStack.m */; };
 		0905788A186DE31C0005308C /* menuCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09057888186DE31C0005308C /* menuCoreDataModel.xcdatamodeld */; };
+		094F9CB019473B5D000215E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905783E186DA30A0005308C /* Foundation.framework */; };
+		094F9CB519473B5D000215E8 /* coreDataStackLibrairy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 094F9CB419473B5D000215E8 /* coreDataStackLibrairy.h */; };
+		094F9CB719473B5D000215E8 /* coreDataStackLibrairy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F9CB619473B5D000215E8 /* coreDataStackLibrairy.m */; };
+		094F9CBD19473B5D000215E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905785C186DA30A0005308C /* XCTest.framework */; };
+		094F9CBE19473B5D000215E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905783E186DA30A0005308C /* Foundation.framework */; };
+		094F9CBF19473B5D000215E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057842186DA30A0005308C /* UIKit.framework */; };
+		094F9CC219473B5D000215E8 /* libcoreDataStackLibrairy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 094F9CAF19473B5D000215E8 /* libcoreDataStackLibrairy.a */; };
+		094F9CC819473B5D000215E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 094F9CC619473B5D000215E8 /* InfoPlist.strings */; };
+		094F9CCA19473B5D000215E8 /* coreDataStackLibrairyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F9CC919473B5D000215E8 /* coreDataStackLibrairyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +42,27 @@
 			remoteGlobalIDString = 0905783A186DA30A0005308C;
 			remoteInfo = coreDataStack;
 		};
+		094F9CC019473B5D000215E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09057833186DA30A0005308C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 094F9CAE19473B5D000215E8;
+			remoteInfo = coreDataStackLibrairy;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		094F9CAD19473B5D000215E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				094F9CB519473B5D000215E8 /* coreDataStackLibrairy.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0905783B186DA30A0005308C /* coreDataStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +85,14 @@
 		09057873186DA43A0005308C /* DBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoreDataStack.h; sourceTree = "<group>"; };
 		09057874186DA43A0005308C /* DBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoreDataStack.m; sourceTree = "<group>"; };
 		09057889186DE31C0005308C /* menuCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = menuCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		094F9CAF19473B5D000215E8 /* libcoreDataStackLibrairy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcoreDataStackLibrairy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		094F9CB319473B5D000215E8 /* coreDataStackLibrairy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "coreDataStackLibrairy-Prefix.pch"; sourceTree = "<group>"; };
+		094F9CB419473B5D000215E8 /* coreDataStackLibrairy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coreDataStackLibrairy.h; sourceTree = "<group>"; };
+		094F9CB619473B5D000215E8 /* coreDataStackLibrairy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreDataStackLibrairy.m; sourceTree = "<group>"; };
+		094F9CBC19473B5D000215E8 /* coreDataStackLibrairyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreDataStackLibrairyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		094F9CC519473B5D000215E8 /* coreDataStackLibrairyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "coreDataStackLibrairyTests-Info.plist"; sourceTree = "<group>"; };
+		094F9CC719473B5D000215E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		094F9CC919473B5D000215E8 /* coreDataStackLibrairyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreDataStackLibrairyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +118,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		094F9CAC19473B5D000215E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094F9CB019473B5D000215E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094F9CB919473B5D000215E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094F9CBD19473B5D000215E8 /* XCTest.framework in Frameworks */,
+				094F9CBF19473B5D000215E8 /* UIKit.framework in Frameworks */,
+				094F9CBE19473B5D000215E8 /* Foundation.framework in Frameworks */,
+				094F9CC219473B5D000215E8 /* libcoreDataStackLibrairy.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +145,8 @@
 			children = (
 				09057846186DA30A0005308C /* coreDataStack */,
 				09057863186DA30A0005308C /* coreDataStackTests */,
+				094F9CB119473B5D000215E8 /* coreDataStackLibrairy */,
+				094F9CC319473B5D000215E8 /* coreDataStackLibrairyTests */,
 				0905783D186DA30A0005308C /* Frameworks */,
 				0905783C186DA30A0005308C /* Products */,
 			);
@@ -99,6 +157,8 @@
 			children = (
 				0905783B186DA30A0005308C /* coreDataStack.app */,
 				0905785B186DA30A0005308C /* coreDataStackTests.xctest */,
+				094F9CAF19473B5D000215E8 /* libcoreDataStackLibrairy.a */,
+				094F9CBC19473B5D000215E8 /* coreDataStackLibrairyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +226,42 @@
 			name = NSManagedObjectSubclass;
 			sourceTree = "<group>";
 		};
+		094F9CB119473B5D000215E8 /* coreDataStackLibrairy */ = {
+			isa = PBXGroup;
+			children = (
+				094F9CB419473B5D000215E8 /* coreDataStackLibrairy.h */,
+				094F9CB619473B5D000215E8 /* coreDataStackLibrairy.m */,
+				094F9CB219473B5D000215E8 /* Supporting Files */,
+			);
+			path = coreDataStackLibrairy;
+			sourceTree = "<group>";
+		};
+		094F9CB219473B5D000215E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				094F9CB319473B5D000215E8 /* coreDataStackLibrairy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		094F9CC319473B5D000215E8 /* coreDataStackLibrairyTests */ = {
+			isa = PBXGroup;
+			children = (
+				094F9CC919473B5D000215E8 /* coreDataStackLibrairyTests.m */,
+				094F9CC419473B5D000215E8 /* Supporting Files */,
+			);
+			path = coreDataStackLibrairyTests;
+			sourceTree = "<group>";
+		};
+		094F9CC419473B5D000215E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				094F9CC519473B5D000215E8 /* coreDataStackLibrairyTests-Info.plist */,
+				094F9CC619473B5D000215E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +300,41 @@
 			productReference = 0905785B186DA30A0005308C /* coreDataStackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		094F9CAE19473B5D000215E8 /* coreDataStackLibrairy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094F9CCF19473B5D000215E8 /* Build configuration list for PBXNativeTarget "coreDataStackLibrairy" */;
+			buildPhases = (
+				094F9CAB19473B5D000215E8 /* Sources */,
+				094F9CAC19473B5D000215E8 /* Frameworks */,
+				094F9CAD19473B5D000215E8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coreDataStackLibrairy;
+			productName = coreDataStackLibrairy;
+			productReference = 094F9CAF19473B5D000215E8 /* libcoreDataStackLibrairy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		094F9CBB19473B5D000215E8 /* coreDataStackLibrairyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094F9CD019473B5D000215E8 /* Build configuration list for PBXNativeTarget "coreDataStackLibrairyTests" */;
+			buildPhases = (
+				094F9CB819473B5D000215E8 /* Sources */,
+				094F9CB919473B5D000215E8 /* Frameworks */,
+				094F9CBA19473B5D000215E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				094F9CC119473B5D000215E8 /* PBXTargetDependency */,
+			);
+			name = coreDataStackLibrairyTests;
+			productName = coreDataStackLibrairyTests;
+			productReference = 094F9CBC19473B5D000215E8 /* coreDataStackLibrairyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,6 +346,9 @@
 				ORGANIZATIONNAME = "Olivier Delecueillerie";
 				TargetAttributes = {
 					0905785A186DA30A0005308C = {
+						TestTargetID = 0905783A186DA30A0005308C;
+					};
+					094F9CBB19473B5D000215E8 = {
 						TestTargetID = 0905783A186DA30A0005308C;
 					};
 				};
@@ -233,6 +367,8 @@
 			targets = (
 				0905783A186DA30A0005308C /* coreDataStack */,
 				0905785A186DA30A0005308C /* coreDataStackTests */,
+				094F9CAE19473B5D000215E8 /* coreDataStackLibrairy */,
+				094F9CBB19473B5D000215E8 /* coreDataStackLibrairyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				09057868186DA30A0005308C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094F9CBA19473B5D000215E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094F9CC819473B5D000215E8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +421,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		094F9CAB19473B5D000215E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094F9CB719473B5D000215E8 /* coreDataStackLibrairy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094F9CB819473B5D000215E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094F9CCA19473B5D000215E8 /* coreDataStackLibrairyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -284,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = 0905783A186DA30A0005308C /* coreDataStack */;
 			targetProxy = 09057861186DA30A0005308C /* PBXContainerItemProxy */;
+		};
+		094F9CC119473B5D000215E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 094F9CAE19473B5D000215E8 /* coreDataStackLibrairy */;
+			targetProxy = 094F9CC019473B5D000215E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -300,6 +465,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				09057867186DA30A0005308C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		094F9CC619473B5D000215E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				094F9CC719473B5D000215E8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -449,6 +622,82 @@
 			};
 			name = Release;
 		};
+		094F9CCB19473B5D000215E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/coreDataStackLibrairy.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coreDataStackLibrairy/coreDataStackLibrairy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		094F9CCC19473B5D000215E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/coreDataStackLibrairy.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coreDataStackLibrairy/coreDataStackLibrairy-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		094F9CCD19473B5D000215E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coreDataStack.app/coreDataStack";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coreDataStackLibrairy/coreDataStackLibrairy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "coreDataStackLibrairyTests/coreDataStackLibrairyTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		094F9CCE19473B5D000215E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/coreDataStack.app/coreDataStack";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "coreDataStackLibrairy/coreDataStackLibrairy-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "coreDataStackLibrairyTests/coreDataStackLibrairyTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -478,6 +727,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		094F9CCF19473B5D000215E8 /* Build configuration list for PBXNativeTarget "coreDataStackLibrairy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094F9CCB19473B5D000215E8 /* Debug */,
+				094F9CCC19473B5D000215E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		094F9CD019473B5D000215E8 /* Build configuration list for PBXNativeTarget "coreDataStackLibrairyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094F9CCD19473B5D000215E8 /* Debug */,
+				094F9CCE19473B5D000215E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

@@ -38,6 +38,16 @@
                ReferencedContainer = "container:coreDataStack.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "094F9CBB19473B5D000215E8"
+               BuildableName = "coreDataStackLibrairyTests.xctest"
+               BlueprintName = "coreDataStackLibrairyTests"
+               ReferencedContainer = "container:coreDataStack.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
