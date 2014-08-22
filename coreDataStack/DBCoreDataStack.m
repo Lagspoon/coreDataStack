@@ -9,6 +9,11 @@
 
 #import "DBCoreDataStack.h"
 
+@interface DBCoreDataStack ()
+@property (strong, nonatomic) NSString *modelName;
+
+@end
+
 @implementation DBCoreDataStack
 
 @synthesize managedObjectModel=_managedObjectModel, managedObjectContext=_managedObjectContext, persistentStoreCoordinator=_persistentStoreCoordinator;
@@ -18,15 +23,61 @@
 //CORE DATA STACK
 ////////////////////////////////////////////////////////////////////////
 
-+ (DBCoreDataStack *)sharedInstance {
-    static dispatch_once_t once;
-    static DBCoreDataStack *sharedInstance;
-    dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
-    });
++ (DBCoreDataStack *)sharedInstanceFor:(datamodel)datamodel {
 
-    return sharedInstance;
+    switch (datamodel) {
+        case 0:
+        {
+            static dispatch_once_t once0;
+            static DBCoreDataStack *sharedInstance0;
+            dispatch_once(&once0, ^{
+                sharedInstance0 = [[self alloc] initWithModelName:@"spellingForMyKidsCoreDataModel"];
+            });
+            return sharedInstance0;
+            break;
+        }
+        case 1:
+        {
+            static dispatch_once_t once1;
+            static DBCoreDataStack *sharedInstance1;
+            dispatch_once(&once1, ^{
+                sharedInstance1 = [[self alloc] initWithModelName:@"webservicesSyncCoreDataModel"];
+            });
+            return sharedInstance1;
+            break;
+        }
+        default:
+            return nil;
+            break;
+    }
 }
+
+- (NSURL *) modelURL {
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:self.modelName withExtension:@"momd"];
+    return modelURL;
+}
+
+- (NSURL *) storeURL {
+    NSString *storeName = [NSString stringWithFormat:@"%@.sqlite",self.modelName];
+    NSURL *storeURL = [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] URLByAppendingPathComponent:storeName];
+    return storeURL;
+}
+
+
+- (id) initWithModelName:(NSString *)modelName {
+    
+    
+    DBCoreDataStack *coreData = [[DBCoreDataStack alloc] init];
+    
+    
+    if (coreData) {
+        coreData.modelName = modelName;
+    } else {
+        // error recovery...
+    }
+    return coreData;
+}
+
 
 /*
  Returns the managed object context for the application.
@@ -64,6 +115,10 @@
 }
 
 
+
+
+
+
 // Returns the managed object model for the application.
 // If the model doesn't already exist, it is created from the application's model.
 - (NSManagedObjectModel *)managedObjectModel
@@ -71,8 +126,8 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"menuCoreDataModel" withExtension:@"momd"];
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    //NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"menuCoreDataModel" withExtension:@"momd"];
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[self modelURL]];
     return _managedObjectModel;
 }
 
@@ -87,7 +142,7 @@
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"menuCoreData.sqlite"];
+    //NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"menuCoreData.sqlite"];
     
     
     
@@ -109,7 +164,7 @@
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
     
     NSError *error;
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[self storeURL] options:options error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          

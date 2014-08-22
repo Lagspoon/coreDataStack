@@ -16,7 +16,16 @@
 @property (nonatomic, strong, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-+ (DBCoreDataStack *) sharedInstance ;
+
+typedef enum datamodel datamodel;
+enum datamodel
+{
+    data = 0,
+    webservicesSync = 1,
+};
+
++ (DBCoreDataStack *) sharedInstanceFor:(datamodel) datamodel;
+
 - (NSURL *)applicationDocumentsDirectory;
 - (void)saveContext;
 
