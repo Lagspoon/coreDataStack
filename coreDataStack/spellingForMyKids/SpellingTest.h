@@ -1,8 +1,8 @@
 //
 //  SpellingTest.h
-//  spellingForMyKids
+//  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 26/05/2014.
+//  Created by Olivier Delecueillerie on 08/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -13,13 +13,13 @@
 
 @interface SpellingTest : NSManagedObject
 
-@property (nonatomic, retain) NSDate * startedAt;
 @property (nonatomic, retain) NSDate * endedAt;
 @property (nonatomic, retain) NSNumber * mode;
 @property (nonatomic, retain) NSNumber * points;
+@property (nonatomic, retain) NSDate * startedAt;
 @property (nonatomic, retain) Kid *kid;
-@property (nonatomic, retain) NSSet *wordTests;
 @property (nonatomic, retain) Spelling *spelling;
+@property (nonatomic, retain) NSSet *wordTests;
 @end
 
 @interface SpellingTest (CoreDataGeneratedAccessors)

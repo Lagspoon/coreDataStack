@@ -1,15 +1,15 @@
 //
 //  Word.h
-//  spellingForMyKids
+//  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 30/05/2014.
+//  Created by Olivier Delecueillerie on 08/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Grapheme, Phoneme, Spelling, Test;
+@class Grapheme, Kid, Phoneme, Spelling, Test;
 
 @interface Word : NSManagedObject
 
@@ -17,13 +17,24 @@
 @property (nonatomic, retain) NSData * image;
 @property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSSet *graphems;
+@property (nonatomic, retain) NSSet *kids;
 @property (nonatomic, retain) NSOrderedSet *phonemes;
 @property (nonatomic, retain) NSSet *spelling;
 @property (nonatomic, retain) Test *tests;
-@property (nonatomic, retain) NSSet *graphems;
 @end
 
 @interface Word (CoreDataGeneratedAccessors)
+
+- (void)addGraphemsObject:(Grapheme *)value;
+- (void)removeGraphemsObject:(Grapheme *)value;
+- (void)addGraphems:(NSSet *)values;
+- (void)removeGraphems:(NSSet *)values;
+
+- (void)addKidsObject:(Kid *)value;
+- (void)removeKidsObject:(Kid *)value;
+- (void)addKids:(NSSet *)values;
+- (void)removeKids:(NSSet *)values;
 
 - (void)insertObject:(Phoneme *)value inPhonemesAtIndex:(NSUInteger)idx;
 - (void)removeObjectFromPhonemesAtIndex:(NSUInteger)idx;
@@ -39,10 +50,5 @@
 - (void)removeSpellingObject:(Spelling *)value;
 - (void)addSpelling:(NSSet *)values;
 - (void)removeSpelling:(NSSet *)values;
-
-- (void)addGraphemsObject:(Grapheme *)value;
-- (void)removeGraphemsObject:(Grapheme *)value;
-- (void)addGraphems:(NSSet *)values;
-- (void)removeGraphems:(NSSet *)values;
 
 @end

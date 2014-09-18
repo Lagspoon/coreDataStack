@@ -53,7 +53,8 @@
 }
 
 - (NSURL *) modelURL {
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:self.modelName withExtension:@"momd"];
+    NSLog(@"Bundle Path %@",[[NSBundle mainBundle] bundlePath] );
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:self.modelName withExtension:@"mom"];
     return modelURL;
 }
 
@@ -67,15 +68,13 @@
 - (id) initWithModelName:(NSString *)modelName {
     
     
-    DBCoreDataStack *coreData = [[DBCoreDataStack alloc] init];
-    
-    
-    if (coreData) {
-        coreData.modelName = modelName;
+    self = [super init];
+    if (self) {
+        self.modelName = modelName;
     } else {
         // error recovery...
     }
-    return coreData;
+    return self;
 }
 
 
@@ -127,6 +126,7 @@
         return _managedObjectModel;
     }
     //NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"menuCoreDataModel" withExtension:@"momd"];
+    NSLog(@"model URL %@", [[self modelURL] path]);
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[self modelURL]];
     return _managedObjectModel;
 }

@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>coreDataStack.xcscheme</key>
+		<key>S4MKCoreDataStack.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
-		</dict>
-		<key>coreDataStackLibrairy.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,6 +28,26 @@
 			<true/>
 		</dict>
 		<key>094F9CBB19473B5D000215E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09510CAE19B0815900FD651C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0951F7DD19A8DBBE00FD651C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0951F7EA19A8DBBF00FD651C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0951F82C19AA29E000FD651C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

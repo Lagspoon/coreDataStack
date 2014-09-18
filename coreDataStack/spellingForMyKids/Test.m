@@ -1,8 +1,8 @@
 //
 //  Test.m
-//  spellingForMyKids
+//  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 26/05/2014.
+//  Created by Olivier Delecueillerie on 08/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -16,13 +16,13 @@
 @implementation Test
 
 @dynamic endedAt;
-@dynamic result;
-@dynamic startedAt;
 @dynamic input;
 @dynamic mode;
+@dynamic result;
+@dynamic startedAt;
 @dynamic kid;
 @dynamic spelling;
-@dynamic word;
 @dynamic spellingTest;
+@dynamic word;
 
 @end

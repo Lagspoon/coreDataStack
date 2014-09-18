@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0905783F186DA30A0005308C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905783E186DA30A0005308C /* Foundation.framework */; };
-		09057841186DA30A0005308C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057840186DA30A0005308C /* CoreGraphics.framework */; };
-		09057843186DA30A0005308C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057842186DA30A0005308C /* UIKit.framework */; };
-		09057845186DA30A0005308C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057844186DA30A0005308C /* CoreData.framework */; };
-		0905784B186DA30A0005308C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09057849186DA30A0005308C /* InfoPlist.strings */; };
-		0905784D186DA30A0005308C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905784C186DA30A0005308C /* main.m */; };
-		09057851186DA30A0005308C /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057850186DA30A0005308C /* DBAppDelegate.m */; };
-		09057875186DA43A0005308C /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057874186DA43A0005308C /* DBCoreDataStack.m */; };
+		0932611E19BE441F00C4DD53 /* Lesson.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932611C19BE441F00C4DD53 /* Lesson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932611F19BE441F00C4DD53 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932611D19BE441F00C4DD53 /* Lesson.m */; };
+		0932612219BE442000C4DD53 /* Kid.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932612019BE442000C4DD53 /* Kid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932612319BE442000C4DD53 /* Kid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932612119BE442000C4DD53 /* Kid.m */; };
+		0932612619BE442000C4DD53 /* Spelling.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932612419BE442000C4DD53 /* Spelling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932612719BE442000C4DD53 /* Spelling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932612519BE442000C4DD53 /* Spelling.m */; };
+		0932612A19BE442000C4DD53 /* SpellingTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932612819BE442000C4DD53 /* SpellingTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932612B19BE442000C4DD53 /* SpellingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932612919BE442000C4DD53 /* SpellingTest.m */; };
+		0932612E19BE442000C4DD53 /* Word.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932612C19BE442000C4DD53 /* Word.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932612F19BE442000C4DD53 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932612D19BE442000C4DD53 /* Word.m */; };
+		0932613219BE442000C4DD53 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932613019BE442000C4DD53 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932613319BE442000C4DD53 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932613119BE442000C4DD53 /* Test.m */; };
+		0932613619BE442000C4DD53 /* Grapheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932613419BE442000C4DD53 /* Grapheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932613719BE442000C4DD53 /* Grapheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932613519BE442000C4DD53 /* Grapheme.m */; };
+		0932613A19BE442000C4DD53 /* Phoneme.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932613819BE442000C4DD53 /* Phoneme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932613B19BE442000C4DD53 /* Phoneme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932613919BE442000C4DD53 /* Phoneme.m */; };
+		0932613C19BE4A1E00C4DD53 /* DBCoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 09057873186DA43A0005308C /* DBCoreDataStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932613F19BE4A4500C4DD53 /* Kid+newKid.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932613D19BE4A4500C4DD53 /* Kid+newKid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0932614019BE4A4500C4DD53 /* Kid+newKid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932613E19BE4A4500C4DD53 /* Kid+newKid.m */; };
 		094F9CB019473B5D000215E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905783E186DA30A0005308C /* Foundation.framework */; };
-		094F9CB519473B5D000215E8 /* coreDataStackLibrairy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 094F9CB419473B5D000215E8 /* coreDataStackLibrairy.h */; };
-		094F9CB719473B5D000215E8 /* coreDataStackLibrairy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F9CB619473B5D000215E8 /* coreDataStackLibrairy.m */; };
-		0951F70F19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0951F70D19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld */; };
-		0951F75919A7E5D600FD651C /* webservicesSyncCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0951F75619A7E5D600FD651C /* webservicesSyncCoreDataModel.xcdatamodeld */; };
-		0951F75A19A7E79700FD651C /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057874186DA43A0005308C /* DBCoreDataStack.m */; };
-		0951F75B19A7E7A200FD651C /* webservicesSyncCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0951F75619A7E5D600FD651C /* webservicesSyncCoreDataModel.xcdatamodeld */; };
-		0951F75C19A7E7A600FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0951F70D19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld */; };
+		09510C9A19B07E3500FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0951F70D19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld */; };
+		09514BE819B0ABAC00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 0951F70D19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld */; };
+		0951F7C219A7F22100FD651C /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 09057874186DA43A0005308C /* DBCoreDataStack.m */; };
+		0951F80919A931DA00FD651C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057844186DA30A0005308C /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,14 +40,12 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				094F9CB519473B5D000215E8 /* coreDataStackLibrairy.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0905783B186DA30A0005308C /* coreDataStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0905783E186DA30A0005308C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09057840186DA30A0005308C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		09057842186DA30A0005308C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,31 +59,40 @@
 		0905785C186DA30A0005308C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		09057873186DA43A0005308C /* DBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoreDataStack.h; sourceTree = "<group>"; };
 		09057874186DA43A0005308C /* DBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoreDataStack.m; sourceTree = "<group>"; };
-		094F9CAF19473B5D000215E8 /* libcoreDataStackLibrairy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcoreDataStackLibrairy.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		094F9CB319473B5D000215E8 /* coreDataStackLibrairy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "coreDataStackLibrairy-Prefix.pch"; sourceTree = "<group>"; };
-		094F9CB419473B5D000215E8 /* coreDataStackLibrairy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coreDataStackLibrairy.h; sourceTree = "<group>"; };
-		094F9CB619473B5D000215E8 /* coreDataStackLibrairy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreDataStackLibrairy.m; sourceTree = "<group>"; };
+		0932611C19BE441F00C4DD53 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lesson.h; path = spellingForMyKids/Lesson.h; sourceTree = "<group>"; };
+		0932611D19BE441F00C4DD53 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lesson.m; path = spellingForMyKids/Lesson.m; sourceTree = "<group>"; };
+		0932612019BE442000C4DD53 /* Kid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kid.h; path = spellingForMyKids/Kid.h; sourceTree = "<group>"; };
+		0932612119BE442000C4DD53 /* Kid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kid.m; path = spellingForMyKids/Kid.m; sourceTree = "<group>"; };
+		0932612419BE442000C4DD53 /* Spelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spelling.h; path = spellingForMyKids/Spelling.h; sourceTree = "<group>"; };
+		0932612519BE442000C4DD53 /* Spelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spelling.m; path = spellingForMyKids/Spelling.m; sourceTree = "<group>"; };
+		0932612819BE442000C4DD53 /* SpellingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpellingTest.h; path = spellingForMyKids/SpellingTest.h; sourceTree = "<group>"; };
+		0932612919BE442000C4DD53 /* SpellingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpellingTest.m; path = spellingForMyKids/SpellingTest.m; sourceTree = "<group>"; };
+		0932612C19BE442000C4DD53 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Word.h; path = spellingForMyKids/Word.h; sourceTree = "<group>"; };
+		0932612D19BE442000C4DD53 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Word.m; path = spellingForMyKids/Word.m; sourceTree = "<group>"; };
+		0932613019BE442000C4DD53 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = spellingForMyKids/Test.h; sourceTree = "<group>"; };
+		0932613119BE442000C4DD53 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = spellingForMyKids/Test.m; sourceTree = "<group>"; };
+		0932613419BE442000C4DD53 /* Grapheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grapheme.h; path = spellingForMyKids/Grapheme.h; sourceTree = "<group>"; };
+		0932613519BE442000C4DD53 /* Grapheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grapheme.m; path = spellingForMyKids/Grapheme.m; sourceTree = "<group>"; };
+		0932613819BE442000C4DD53 /* Phoneme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Phoneme.h; path = spellingForMyKids/Phoneme.h; sourceTree = "<group>"; };
+		0932613919BE442000C4DD53 /* Phoneme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Phoneme.m; path = spellingForMyKids/Phoneme.m; sourceTree = "<group>"; };
+		0932613D19BE4A4500C4DD53 /* Kid+newKid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Kid+newKid.h"; path = "spellingForMyKids/Kid+newKid.h"; sourceTree = "<group>"; };
+		0932613E19BE4A4500C4DD53 /* Kid+newKid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Kid+newKid.m"; path = "spellingForMyKids/Kid+newKid.m"; sourceTree = "<group>"; };
+		094F9CAF19473B5D000215E8 /* libS4MKCoreDataStack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libS4MKCoreDataStack.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0951F70E19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = spellingForMyKidsCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		0951F75719A7E5D600FD651C /* menuCoreDataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "menuCoreDataModel 2.xcdatamodel"; sourceTree = "<group>"; };
 		0951F75819A7E5D600FD651C /* menuCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = menuCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		0951F82E19AA29E000FD651C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0951F83219AA29E000FD651C /* dataModel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dataModel-Info.plist"; sourceTree = "<group>"; };
+		0951F83419AA29E000FD651C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0951F83619AA29E000FD651C /* dataModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dataModel-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09057838186DA30A0005308C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09057841186DA30A0005308C /* CoreGraphics.framework in Frameworks */,
-				09057845186DA30A0005308C /* CoreData.framework in Frameworks */,
-				09057843186DA30A0005308C /* UIKit.framework in Frameworks */,
-				0905783F186DA30A0005308C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		094F9CAC19473B5D000215E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0951F80919A931DA00FD651C /* CoreData.framework in Frameworks */,
 				094F9CB019473B5D000215E8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				09057846186DA30A0005308C /* coreDataStack */,
-				094F9CB119473B5D000215E8 /* coreDataStackLibrairy */,
+				0951F83019AA29E000FD651C /* dataModel */,
 				0905783D186DA30A0005308C /* Frameworks */,
 				0905783C186DA30A0005308C /* Products */,
 			);
@@ -98,8 +113,7 @@
 		0905783C186DA30A0005308C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0905783B186DA30A0005308C /* coreDataStack.app */,
-				094F9CAF19473B5D000215E8 /* libcoreDataStackLibrairy.a */,
+				094F9CAF19473B5D000215E8 /* libS4MKCoreDataStack.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +126,7 @@
 				09057842186DA30A0005308C /* UIKit.framework */,
 				09057844186DA30A0005308C /* CoreData.framework */,
 				0905785C186DA30A0005308C /* XCTest.framework */,
+				0951F82E19AA29E000FD651C /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,7 +139,7 @@
 				09057873186DA43A0005308C /* DBCoreDataStack.h */,
 				09057874186DA43A0005308C /* DBCoreDataStack.m */,
 				0951F75619A7E5D600FD651C /* webservicesSyncCoreDataModel.xcdatamodeld */,
-				0951F70D19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld */,
+				0951F82419A9BA0E00FD651C /* S4MK */,
 				09057847186DA30A0005308C /* Supporting Files */,
 			);
 			path = coreDataStack;
@@ -141,59 +156,90 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		094F9CB119473B5D000215E8 /* coreDataStackLibrairy */ = {
+		0951F82419A9BA0E00FD651C /* S4MK */ = {
 			isa = PBXGroup;
 			children = (
-				094F9CB419473B5D000215E8 /* coreDataStackLibrairy.h */,
-				094F9CB619473B5D000215E8 /* coreDataStackLibrairy.m */,
-				094F9CB219473B5D000215E8 /* Supporting Files */,
+				0932613D19BE4A4500C4DD53 /* Kid+newKid.h */,
+				0932613E19BE4A4500C4DD53 /* Kid+newKid.m */,
+				0951F70D19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld */,
+				0932613819BE442000C4DD53 /* Phoneme.h */,
+				0932613919BE442000C4DD53 /* Phoneme.m */,
+				0932613419BE442000C4DD53 /* Grapheme.h */,
+				0932613519BE442000C4DD53 /* Grapheme.m */,
+				0932613019BE442000C4DD53 /* Test.h */,
+				0932613119BE442000C4DD53 /* Test.m */,
+				0932612C19BE442000C4DD53 /* Word.h */,
+				0932612D19BE442000C4DD53 /* Word.m */,
+				0932612819BE442000C4DD53 /* SpellingTest.h */,
+				0932612919BE442000C4DD53 /* SpellingTest.m */,
+				0932612419BE442000C4DD53 /* Spelling.h */,
+				0932612519BE442000C4DD53 /* Spelling.m */,
+				0932612019BE442000C4DD53 /* Kid.h */,
+				0932612119BE442000C4DD53 /* Kid.m */,
+				0932611C19BE441F00C4DD53 /* Lesson.h */,
+				0932611D19BE441F00C4DD53 /* Lesson.m */,
 			);
-			path = coreDataStackLibrairy;
+			name = S4MK;
 			sourceTree = "<group>";
 		};
-		094F9CB219473B5D000215E8 /* Supporting Files */ = {
+		0951F83019AA29E000FD651C /* dataModel */ = {
 			isa = PBXGroup;
 			children = (
-				094F9CB319473B5D000215E8 /* coreDataStackLibrairy-Prefix.pch */,
+				0951F83119AA29E000FD651C /* Supporting Files */,
+			);
+			path = dataModel;
+			sourceTree = "<group>";
+		};
+		0951F83119AA29E000FD651C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0951F83219AA29E000FD651C /* dataModel-Info.plist */,
+				0951F83319AA29E000FD651C /* InfoPlist.strings */,
+				0951F83619AA29E000FD651C /* dataModel-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		0905783A186DA30A0005308C /* coreDataStack */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0905786D186DA30A0005308C /* Build configuration list for PBXNativeTarget "coreDataStack" */;
-			buildPhases = (
-				09057837186DA30A0005308C /* Sources */,
-				09057838186DA30A0005308C /* Frameworks */,
-				09057839186DA30A0005308C /* Resources */,
+/* Begin PBXHeadersBuildPhase section */
+		09510C9B19B0805700FD651C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0932612E19BE442000C4DD53 /* Word.h in Headers */,
+				0932612619BE442000C4DD53 /* Spelling.h in Headers */,
+				0932613619BE442000C4DD53 /* Grapheme.h in Headers */,
+				0932612219BE442000C4DD53 /* Kid.h in Headers */,
+				0932612A19BE442000C4DD53 /* SpellingTest.h in Headers */,
+				0932613F19BE4A4500C4DD53 /* Kid+newKid.h in Headers */,
+				0932613219BE442000C4DD53 /* Test.h in Headers */,
+				0932613C19BE4A1E00C4DD53 /* DBCoreDataStack.h in Headers */,
+				0932613A19BE442000C4DD53 /* Phoneme.h in Headers */,
+				0932611E19BE441F00C4DD53 /* Lesson.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = coreDataStack;
-			productName = coreDataStack;
-			productReference = 0905783B186DA30A0005308C /* coreDataStack.app */;
-			productType = "com.apple.product-type.application";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		094F9CAE19473B5D000215E8 /* coreDataStackLibrairy */ = {
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		094F9CAE19473B5D000215E8 /* S4MKCoreDataStack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 094F9CCF19473B5D000215E8 /* Build configuration list for PBXNativeTarget "coreDataStackLibrairy" */;
+			buildConfigurationList = 094F9CCF19473B5D000215E8 /* Build configuration list for PBXNativeTarget "S4MKCoreDataStack" */;
 			buildPhases = (
 				094F9CAB19473B5D000215E8 /* Sources */,
 				094F9CAC19473B5D000215E8 /* Frameworks */,
 				094F9CAD19473B5D000215E8 /* CopyFiles */,
+				0951F85019AAA67400FD651C /* Resources */,
+				09510C9B19B0805700FD651C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = coreDataStackLibrairy;
+			name = S4MKCoreDataStack;
 			productName = coreDataStackLibrairy;
-			productReference = 094F9CAF19473B5D000215E8 /* libcoreDataStackLibrairy.a */;
+			productReference = 094F9CAF19473B5D000215E8 /* libS4MKCoreDataStack.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -218,44 +264,38 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0905783A186DA30A0005308C /* coreDataStack */,
-				094F9CAE19473B5D000215E8 /* coreDataStackLibrairy */,
+				094F9CAE19473B5D000215E8 /* S4MKCoreDataStack */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		09057839186DA30A0005308C /* Resources */ = {
+		0951F85019AAA67400FD651C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0905784B186DA30A0005308C /* InfoPlist.strings in Resources */,
+				09514BE819B0ABAC00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		09057837186DA30A0005308C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09057851186DA30A0005308C /* DBAppDelegate.m in Sources */,
-				0951F70F19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Sources */,
-				0905784D186DA30A0005308C /* main.m in Sources */,
-				0951F75919A7E5D600FD651C /* webservicesSyncCoreDataModel.xcdatamodeld in Sources */,
-				09057875186DA43A0005308C /* DBCoreDataStack.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		094F9CAB19473B5D000215E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0951F75B19A7E7A200FD651C /* webservicesSyncCoreDataModel.xcdatamodeld in Sources */,
-				0951F75C19A7E7A600FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Sources */,
-				094F9CB719473B5D000215E8 /* coreDataStackLibrairy.m in Sources */,
-				0951F75A19A7E79700FD651C /* DBCoreDataStack.m in Sources */,
+				0932611F19BE441F00C4DD53 /* Lesson.m in Sources */,
+				0932612319BE442000C4DD53 /* Kid.m in Sources */,
+				0932613319BE442000C4DD53 /* Test.m in Sources */,
+				0932612719BE442000C4DD53 /* Spelling.m in Sources */,
+				0932613719BE442000C4DD53 /* Grapheme.m in Sources */,
+				0932613B19BE442000C4DD53 /* Phoneme.m in Sources */,
+				0932612B19BE442000C4DD53 /* SpellingTest.m in Sources */,
+				0932612F19BE442000C4DD53 /* Word.m in Sources */,
+				0951F7C219A7F22100FD651C /* DBCoreDataStack.m in Sources */,
+				09510C9A19B07E3500FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Sources */,
+				0932614019BE4A4500C4DD53 /* Kid+newKid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +306,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				0905784A186DA30A0005308C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0951F83319AA29E000FD651C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0951F83419AA29E000FD651C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -345,46 +393,97 @@
 			};
 			name = Release;
 		};
-		0905786E186DA30A0005308C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "coreDataStack/coreDataStack-Prefix.pch";
-				INFOPLIST_FILE = "coreDataStack/coreDataStack-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		0905786F186DA30A0005308C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "coreDataStack/coreDataStack-Prefix.pch";
-				INFOPLIST_FILE = "coreDataStack/coreDataStack-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		094F9CCB19473B5D000215E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/coreDataStackLibrairy.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/JSONKit.build/Debug/JSONKit.framework.build/StaticAnalyzer/JSONKit",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/OAuth2Client.build/Debug/OAuth2Client.framework.build/StaticAnalyzer/OAuth2Client",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/SoundCloudAPI.build/Debug/SoundCloudAPI.framework.build/StaticAnalyzer/SoundCloudAPI",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Products/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "coreDataStackLibrairy/coreDataStackLibrairy-Prefix.pch";
+				GCC_PREFIX_HEADER = "coreDataStack/coreDataStack-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/i386",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/x86_64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Intermediates/controlFramework.build/Debug-iphoneos/controlFramework.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Intermediates/controlFramework.build/Debug-iphoneos/controlFramework.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Intermediates/controlFramework.build/Debug-iphoneos/controlFramework.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/i386",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/x86_64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Intermediates/GTL.build/Debug-iphoneos/GTLTouchStaticLib.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Intermediates/GTL.build/Debug-iphoneos/GTLTouchStaticLib.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/microphoneFromLib-hiqinnbifbpyohdctymbrjclkdri/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/UninstalledProducts",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreDataStack.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreDataStack.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreDataStack.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/testMicrophoneWithControlFramework-gjbqxtuevxizuhaleyytbylnimsl/Build/Products/Debug-iphonesimulator",
+				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/local/usr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -393,12 +492,89 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/coreDataStackLibrairy.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/JSONKit.build/Debug/JSONKit.framework.build/StaticAnalyzer/JSONKit",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/OAuth2Client.build/Debug/OAuth2Client.framework.build/StaticAnalyzer/OAuth2Client",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/SoundCloudAPI.build/Debug/SoundCloudAPI.framework.build/StaticAnalyzer/SoundCloudAPI",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Products/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "coreDataStackLibrairy/coreDataStackLibrairy-Prefix.pch";
+				GCC_PREFIX_HEADER = "coreDataStack/coreDataStack-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/i386",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/x86_64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlApp-fnbskqstvyaqnmdfdumpbvqkjpgi/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Intermediates/controlFramework.build/Debug-iphoneos/controlFramework.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Intermediates/controlFramework.build/Debug-iphoneos/controlFramework.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Intermediates/controlFramework.build/Debug-iphoneos/controlFramework.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlFramework-fleiyvtrdyzodvayuggqbviklqbd/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphoneos/controlLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/i386",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Intermediates/controlLibrairy.build/Debug-iphonesimulator/controlLibrairy.build/Objects-normal/x86_64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/controlLibrairy-gjcegnbjbrztymbdbdmhwhsupmiv/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-cqpdojbargwyzfcsoccujmputnpq/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/coreDataStack-ezkrjngzugxfklbcvogsqozeizuh/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Intermediates/GTL.build/Debug-iphoneos/GTLTouchStaticLib.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Intermediates/GTL.build/Debug-iphoneos/GTLTouchStaticLib.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/googleDriveAPI-csyvdxvcdrvmyhcawljxcdqslqjw/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/microphoneFromLib-hiqinnbifbpyohdctymbrjclkdri/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Intermediates/UninstalledProducts",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/soundCloudApp-bqnujgzvogedumashqkztbadevyy/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreData.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreDataStack.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreDataStack.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/coreDataStack.build/Debug-iphoneos/S4MKCoreDataStack.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/spellingForMyKids-cgxrxwyxcofxlwgaeeqjudkvzmyu/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/coreDataStack.build/Debug-iphoneos/coreDataStackLibrairy.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/arm64",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Intermediates/syncWithAFNetworking.build/Debug-iphoneos/syncWithAFNetworkingLibrary.build/Objects-normal/armv7s",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/syncWithAFNetworking-eintmburreeebeesdqptandloace/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/testMicrophoneWithControlFramework-gjbqxtuevxizuhaleyytbylnimsl/Build/Products/Debug-iphonesimulator",
+				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include/local/usr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -415,16 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0905786D186DA30A0005308C /* Build configuration list for PBXNativeTarget "coreDataStack" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0905786E186DA30A0005308C /* Debug */,
-				0905786F186DA30A0005308C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		094F9CCF19473B5D000215E8 /* Build configuration list for PBXNativeTarget "coreDataStackLibrairy" */ = {
+		094F9CCF19473B5D000215E8 /* Build configuration list for PBXNativeTarget "S4MKCoreDataStack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				094F9CCB19473B5D000215E8 /* Debug */,

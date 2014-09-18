@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "094F9CAE19473B5D000215E8"
-               BuildableName = "libcoreDataStackLibrairy.a"
-               BlueprintName = "coreDataStackLibrairy"
+               BuildableName = "libS4MKCoreDataStack.a"
+               BlueprintName = "S4MKCoreDataStack"
                ReferencedContainer = "container:coreDataStack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

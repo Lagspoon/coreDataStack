@@ -10,5 +10,5 @@
 
 @interface Kid (newKid)
 
-+ (Kid *) createANewKid;
+//+ (Kid *) createANewKid;
 @end

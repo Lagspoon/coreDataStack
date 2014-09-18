@@ -1,8 +1,8 @@
 //
 //  SpellingTest.m
-//  spellingForMyKids
+//  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 26/05/2014.
+//  Created by Olivier Delecueillerie on 08/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -14,12 +14,12 @@
 
 @implementation SpellingTest
 
-@dynamic startedAt;
 @dynamic endedAt;
 @dynamic mode;
 @dynamic points;
+@dynamic startedAt;
 @dynamic kid;
-@dynamic wordTests;
 @dynamic spelling;
+@dynamic wordTests;
 
 @end

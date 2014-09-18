@@ -1,27 +1,34 @@
 //
 //  Spelling.h
-//  spellingForMyKids
+//  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 26/05/2014.
+//  Created by Olivier Delecueillerie on 08/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Lesson, SpellingTest, Test, Word;
+@class Kid, Lesson, SpellingTest, Test, Word;
 
 @interface Spelling : NSManagedObject
 
 @property (nonatomic, retain) NSString * explication;
+@property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSSet *kids;
+@property (nonatomic, retain) Lesson *lesson;
 @property (nonatomic, retain) NSSet *spellingTests;
 @property (nonatomic, retain) NSSet *words;
-@property (nonatomic, retain) Lesson *lesson;
 @property (nonatomic, retain) NSSet *wordTests;
 @end
 
 @interface Spelling (CoreDataGeneratedAccessors)
+
+- (void)addKidsObject:(Kid *)value;
+- (void)removeKidsObject:(Kid *)value;
+- (void)addKids:(NSSet *)values;
+- (void)removeKids:(NSSet *)values;
 
 - (void)addSpellingTestsObject:(SpellingTest *)value;
 - (void)removeSpellingTestsObject:(SpellingTest *)value;
