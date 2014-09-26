@@ -1,24 +1,22 @@
 //
-//  Test.m
+//  WordTest.m
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 25/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
-#import "Test.h"
+#import "WordTest.h"
 #import "Kid.h"
 #import "Spelling.h"
 #import "SpellingTest.h"
 #import "Word.h"
 
 
-@implementation Test
+@implementation WordTest
 
 @dynamic endedAt;
 @dynamic input;
-@dynamic mode;
-@dynamic result;
 @dynamic startedAt;
 @dynamic kid;
 @dynamic spelling;

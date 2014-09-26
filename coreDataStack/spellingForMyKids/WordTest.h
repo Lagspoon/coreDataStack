@@ -1,8 +1,8 @@
 //
-//  Test.h
+//  WordTest.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 25/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -11,12 +11,10 @@
 
 @class Kid, Spelling, SpellingTest, Word;
 
-@interface Test : NSManagedObject
+@interface WordTest : NSManagedObject
 
 @property (nonatomic, retain) NSDate * endedAt;
 @property (nonatomic, retain) NSString * input;
-@property (nonatomic, retain) NSNumber * mode;
-@property (nonatomic, retain) NSNumber * result;
 @property (nonatomic, retain) NSDate * startedAt;
 @property (nonatomic, retain) Kid *kid;
 @property (nonatomic, retain) Spelling *spelling;

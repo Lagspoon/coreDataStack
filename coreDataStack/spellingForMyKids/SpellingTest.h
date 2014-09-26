@@ -2,20 +2,20 @@
 //  SpellingTest.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 25/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Kid, Spelling, Test;
+@class Kid, Spelling, WordTest;
 
 @interface SpellingTest : NSManagedObject
 
 @property (nonatomic, retain) NSDate * endedAt;
-@property (nonatomic, retain) NSNumber * mode;
-@property (nonatomic, retain) NSNumber * points;
+@property (nonatomic, retain) NSNumber * level;
+@property (nonatomic, retain) NSNumber * result;
 @property (nonatomic, retain) NSDate * startedAt;
 @property (nonatomic, retain) Kid *kid;
 @property (nonatomic, retain) Spelling *spelling;
@@ -24,8 +24,8 @@
 
 @interface SpellingTest (CoreDataGeneratedAccessors)
 
-- (void)addWordTestsObject:(Test *)value;
-- (void)removeWordTestsObject:(Test *)value;
+- (void)addWordTestsObject:(WordTest *)value;
+- (void)removeWordTestsObject:(WordTest *)value;
 - (void)addWordTests:(NSSet *)values;
 - (void)removeWordTests:(NSSet *)values;
 

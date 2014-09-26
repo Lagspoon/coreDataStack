@@ -11,7 +11,7 @@
 #import "Kid.h"
 #import "Phoneme.h"
 #import "Spelling.h"
-#import "Test.h"
+#import "WordTest.h"
 
 
 @implementation Word

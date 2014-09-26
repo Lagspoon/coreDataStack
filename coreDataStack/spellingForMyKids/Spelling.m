@@ -10,7 +10,7 @@
 #import "Kid.h"
 #import "Lesson.h"
 #import "SpellingTest.h"
-#import "Test.h"
+#import "WordTest.h"
 #import "Word.h"
 
 
