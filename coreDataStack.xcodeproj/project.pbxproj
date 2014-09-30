@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090B5B1219D562D2000A7493 /* Spelling+enhanced.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B5B1019D562D2000A7493 /* Spelling+enhanced.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		090B5B1319D562D2000A7493 /* Spelling+enhanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B5B1119D562D2000A7493 /* Spelling+enhanced.m */; };
+		090B5B1619D697BE000A7493 /* WordTest+enhanced.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B5B1419D697BE000A7493 /* WordTest+enhanced.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		090B5B1719D697BE000A7493 /* WordTest+enhanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B5B1519D697BE000A7493 /* WordTest+enhanced.m */; };
+		090B5B1D19D698ED000A7493 /* Spelling.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B5B1B19D698ED000A7493 /* Spelling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		090B5B1E19D698ED000A7493 /* Spelling.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B5B1C19D698ED000A7493 /* Spelling.m */; };
+		090B5B2A19D9FD3F000A7493 /* WordTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B5B2819D9FD3F000A7493 /* WordTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		090B5B2B19D9FD3F000A7493 /* WordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B5B2919D9FD3F000A7493 /* WordTest.m */; };
+		090B5B2E19D9FD40000A7493 /* SpellingTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B5B2C19D9FD40000A7493 /* SpellingTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		090B5B2F19D9FD40000A7493 /* SpellingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B5B2D19D9FD40000A7493 /* SpellingTest.m */; };
 		0932611E19BE441F00C4DD53 /* Lesson.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932611C19BE441F00C4DD53 /* Lesson.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0932611F19BE441F00C4DD53 /* Lesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932611D19BE441F00C4DD53 /* Lesson.m */; };
-		0932612619BE442000C4DD53 /* Spelling.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932612419BE442000C4DD53 /* Spelling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0932612719BE442000C4DD53 /* Spelling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932612519BE442000C4DD53 /* Spelling.m */; };
 		0932612E19BE442000C4DD53 /* Word.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932612C19BE442000C4DD53 /* Word.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0932612F19BE442000C4DD53 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932612D19BE442000C4DD53 /* Word.m */; };
 		0932613619BE442000C4DD53 /* Grapheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 0932613419BE442000C4DD53 /* Grapheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,16 +33,10 @@
 		0951F80919A931DA00FD651C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09057844186DA30A0005308C /* CoreData.framework */; };
 		09A0850719D46FDF00EB77EE /* Kid+enhanced.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A0850519D46FDF00EB77EE /* Kid+enhanced.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09A0850819D46FDF00EB77EE /* Kid+enhanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A0850619D46FDF00EB77EE /* Kid+enhanced.m */; };
-		09A5B20119CB9DE100EA02BD /* SpellingTest+mode.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A5B1FF19CB9DE100EA02BD /* SpellingTest+mode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09A5B20219CB9DE100EA02BD /* SpellingTest+mode.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5B20019CB9DE100EA02BD /* SpellingTest+mode.m */; };
-		09A5B21119CBA2A800EA02BD /* WordTest+scoring.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A5B20F19CBA2A800EA02BD /* WordTest+scoring.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09A5B21219CBA2A800EA02BD /* WordTest+scoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5B21019CBA2A800EA02BD /* WordTest+scoring.m */; };
+		09A5B20119CB9DE100EA02BD /* SpellingTest+enhanced.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A5B1FF19CB9DE100EA02BD /* SpellingTest+enhanced.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A5B20219CB9DE100EA02BD /* SpellingTest+enhanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5B20019CB9DE100EA02BD /* SpellingTest+enhanced.m */; };
 		09A5B21D19D18A5200EA02BD /* Kid.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A5B21B19D18A5200EA02BD /* Kid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09A5B21E19D18A5200EA02BD /* Kid.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5B21C19D18A5200EA02BD /* Kid.m */; };
-		09ACA51819D4157000C22FA2 /* WordTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 09ACA51619D4157000C22FA2 /* WordTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09ACA51919D4157000C22FA2 /* WordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ACA51719D4157000C22FA2 /* WordTest.m */; };
-		09ACA51C19D4157000C22FA2 /* SpellingTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 09ACA51A19D4157000C22FA2 /* SpellingTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09ACA51D19D4157000C22FA2 /* SpellingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ACA51B19D4157000C22FA2 /* SpellingTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,10 +65,18 @@
 		0905785C186DA30A0005308C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		09057873186DA43A0005308C /* DBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoreDataStack.h; sourceTree = "<group>"; };
 		09057874186DA43A0005308C /* DBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoreDataStack.m; sourceTree = "<group>"; };
+		090B5B1019D562D2000A7493 /* Spelling+enhanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Spelling+enhanced.h"; path = "spellingForMyKids/Spelling+enhanced.h"; sourceTree = "<group>"; };
+		090B5B1119D562D2000A7493 /* Spelling+enhanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Spelling+enhanced.m"; path = "spellingForMyKids/Spelling+enhanced.m"; sourceTree = "<group>"; };
+		090B5B1419D697BE000A7493 /* WordTest+enhanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WordTest+enhanced.h"; path = "spellingForMyKids/WordTest+enhanced.h"; sourceTree = "<group>"; };
+		090B5B1519D697BE000A7493 /* WordTest+enhanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WordTest+enhanced.m"; path = "spellingForMyKids/WordTest+enhanced.m"; sourceTree = "<group>"; };
+		090B5B1B19D698ED000A7493 /* Spelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spelling.h; path = spellingForMyKids/Spelling.h; sourceTree = "<group>"; };
+		090B5B1C19D698ED000A7493 /* Spelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spelling.m; path = spellingForMyKids/Spelling.m; sourceTree = "<group>"; };
+		090B5B2819D9FD3F000A7493 /* WordTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordTest.h; path = spellingForMyKids/WordTest.h; sourceTree = "<group>"; };
+		090B5B2919D9FD3F000A7493 /* WordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordTest.m; path = spellingForMyKids/WordTest.m; sourceTree = "<group>"; };
+		090B5B2C19D9FD40000A7493 /* SpellingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpellingTest.h; path = spellingForMyKids/SpellingTest.h; sourceTree = "<group>"; };
+		090B5B2D19D9FD40000A7493 /* SpellingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpellingTest.m; path = spellingForMyKids/SpellingTest.m; sourceTree = "<group>"; };
 		0932611C19BE441F00C4DD53 /* Lesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lesson.h; path = spellingForMyKids/Lesson.h; sourceTree = "<group>"; };
 		0932611D19BE441F00C4DD53 /* Lesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lesson.m; path = spellingForMyKids/Lesson.m; sourceTree = "<group>"; };
-		0932612419BE442000C4DD53 /* Spelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spelling.h; path = spellingForMyKids/Spelling.h; sourceTree = "<group>"; };
-		0932612519BE442000C4DD53 /* Spelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spelling.m; path = spellingForMyKids/Spelling.m; sourceTree = "<group>"; };
 		0932612C19BE442000C4DD53 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Word.h; path = spellingForMyKids/Word.h; sourceTree = "<group>"; };
 		0932612D19BE442000C4DD53 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Word.m; path = spellingForMyKids/Word.m; sourceTree = "<group>"; };
 		0932613419BE442000C4DD53 /* Grapheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grapheme.h; path = spellingForMyKids/Grapheme.h; sourceTree = "<group>"; };
@@ -83,16 +93,10 @@
 		0951F83619AA29E000FD651C /* dataModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dataModel-Prefix.pch"; sourceTree = "<group>"; };
 		09A0850519D46FDF00EB77EE /* Kid+enhanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Kid+enhanced.h"; path = "spellingForMyKids/Kid+enhanced.h"; sourceTree = "<group>"; };
 		09A0850619D46FDF00EB77EE /* Kid+enhanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Kid+enhanced.m"; path = "spellingForMyKids/Kid+enhanced.m"; sourceTree = "<group>"; };
-		09A5B1FF19CB9DE100EA02BD /* SpellingTest+mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpellingTest+mode.h"; path = "spellingForMyKids/SpellingTest+mode.h"; sourceTree = "<group>"; };
-		09A5B20019CB9DE100EA02BD /* SpellingTest+mode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SpellingTest+mode.m"; path = "spellingForMyKids/SpellingTest+mode.m"; sourceTree = "<group>"; };
-		09A5B20F19CBA2A800EA02BD /* WordTest+scoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WordTest+scoring.h"; sourceTree = "<group>"; };
-		09A5B21019CBA2A800EA02BD /* WordTest+scoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WordTest+scoring.m"; sourceTree = "<group>"; };
+		09A5B1FF19CB9DE100EA02BD /* SpellingTest+enhanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpellingTest+enhanced.h"; path = "spellingForMyKids/SpellingTest+enhanced.h"; sourceTree = "<group>"; };
+		09A5B20019CB9DE100EA02BD /* SpellingTest+enhanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SpellingTest+enhanced.m"; path = "spellingForMyKids/SpellingTest+enhanced.m"; sourceTree = "<group>"; };
 		09A5B21B19D18A5200EA02BD /* Kid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kid.h; path = spellingForMyKids/Kid.h; sourceTree = "<group>"; };
 		09A5B21C19D18A5200EA02BD /* Kid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kid.m; path = spellingForMyKids/Kid.m; sourceTree = "<group>"; };
-		09ACA51619D4157000C22FA2 /* WordTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordTest.h; path = spellingForMyKids/WordTest.h; sourceTree = "<group>"; };
-		09ACA51719D4157000C22FA2 /* WordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordTest.m; path = spellingForMyKids/WordTest.m; sourceTree = "<group>"; };
-		09ACA51A19D4157000C22FA2 /* SpellingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpellingTest.h; path = spellingForMyKids/SpellingTest.h; sourceTree = "<group>"; };
-		09ACA51B19D4157000C22FA2 /* SpellingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpellingTest.m; path = spellingForMyKids/SpellingTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,27 +171,29 @@
 		0951F82419A9BA0E00FD651C /* S4MK */ = {
 			isa = PBXGroup;
 			children = (
+				090B5B2819D9FD3F000A7493 /* WordTest.h */,
+				090B5B2C19D9FD40000A7493 /* SpellingTest.h */,
+				090B5B2D19D9FD40000A7493 /* SpellingTest.m */,
+				090B5B2919D9FD3F000A7493 /* WordTest.m */,
 				0951F70D19A7B0AE00FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld */,
-				09ACA51A19D4157000C22FA2 /* SpellingTest.h */,
-				09ACA51B19D4157000C22FA2 /* SpellingTest.m */,
-				09ACA51619D4157000C22FA2 /* WordTest.h */,
-				09ACA51719D4157000C22FA2 /* WordTest.m */,
+				090B5B1B19D698ED000A7493 /* Spelling.h */,
+				090B5B1C19D698ED000A7493 /* Spelling.m */,
+				090B5B1419D697BE000A7493 /* WordTest+enhanced.h */,
+				090B5B1519D697BE000A7493 /* WordTest+enhanced.m */,
 				09A5B21B19D18A5200EA02BD /* Kid.h */,
 				09A0850519D46FDF00EB77EE /* Kid+enhanced.h */,
 				09A0850619D46FDF00EB77EE /* Kid+enhanced.m */,
 				09A5B21C19D18A5200EA02BD /* Kid.m */,
 				0932612C19BE442000C4DD53 /* Word.h */,
 				0932612D19BE442000C4DD53 /* Word.m */,
-				09A5B20F19CBA2A800EA02BD /* WordTest+scoring.h */,
-				09A5B21019CBA2A800EA02BD /* WordTest+scoring.m */,
 				0932613819BE442000C4DD53 /* Phoneme.h */,
 				0932613919BE442000C4DD53 /* Phoneme.m */,
 				0932613419BE442000C4DD53 /* Grapheme.h */,
 				0932613519BE442000C4DD53 /* Grapheme.m */,
-				0932612419BE442000C4DD53 /* Spelling.h */,
-				0932612519BE442000C4DD53 /* Spelling.m */,
-				09A5B1FF19CB9DE100EA02BD /* SpellingTest+mode.h */,
-				09A5B20019CB9DE100EA02BD /* SpellingTest+mode.m */,
+				090B5B1019D562D2000A7493 /* Spelling+enhanced.h */,
+				090B5B1119D562D2000A7493 /* Spelling+enhanced.m */,
+				09A5B1FF19CB9DE100EA02BD /* SpellingTest+enhanced.h */,
+				09A5B20019CB9DE100EA02BD /* SpellingTest+enhanced.m */,
 				0932611C19BE441F00C4DD53 /* Lesson.h */,
 				0932611D19BE441F00C4DD53 /* Lesson.m */,
 			);
@@ -220,17 +226,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0932612E19BE442000C4DD53 /* Word.h in Headers */,
-				0932612619BE442000C4DD53 /* Spelling.h in Headers */,
 				0932613619BE442000C4DD53 /* Grapheme.h in Headers */,
-				09A5B20119CB9DE100EA02BD /* SpellingTest+mode.h in Headers */,
-				09ACA51C19D4157000C22FA2 /* SpellingTest.h in Headers */,
-				09ACA51819D4157000C22FA2 /* WordTest.h in Headers */,
+				090B5B1219D562D2000A7493 /* Spelling+enhanced.h in Headers */,
+				09A5B20119CB9DE100EA02BD /* SpellingTest+enhanced.h in Headers */,
+				0932611E19BE441F00C4DD53 /* Lesson.h in Headers */,
+				090B5B1D19D698ED000A7493 /* Spelling.h in Headers */,
 				09A5B21D19D18A5200EA02BD /* Kid.h in Headers */,
+				090B5B2A19D9FD3F000A7493 /* WordTest.h in Headers */,
+				090B5B2E19D9FD40000A7493 /* SpellingTest.h in Headers */,
 				0932613C19BE4A1E00C4DD53 /* DBCoreDataStack.h in Headers */,
-				09A5B21119CBA2A800EA02BD /* WordTest+scoring.h in Headers */,
 				09A0850719D46FDF00EB77EE /* Kid+enhanced.h in Headers */,
 				0932613A19BE442000C4DD53 /* Phoneme.h in Headers */,
-				0932611E19BE441F00C4DD53 /* Lesson.h in Headers */,
+				090B5B1619D697BE000A7493 /* WordTest+enhanced.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,19 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A5B21219CBA2A800EA02BD /* WordTest+scoring.m in Sources */,
+				090B5B1719D697BE000A7493 /* WordTest+enhanced.m in Sources */,
 				09A5B21E19D18A5200EA02BD /* Kid.m in Sources */,
-				09A5B20219CB9DE100EA02BD /* SpellingTest+mode.m in Sources */,
+				09A5B20219CB9DE100EA02BD /* SpellingTest+enhanced.m in Sources */,
+				090B5B1E19D698ED000A7493 /* Spelling.m in Sources */,
 				09A0850819D46FDF00EB77EE /* Kid+enhanced.m in Sources */,
 				0932611F19BE441F00C4DD53 /* Lesson.m in Sources */,
-				0932612719BE442000C4DD53 /* Spelling.m in Sources */,
 				0932613719BE442000C4DD53 /* Grapheme.m in Sources */,
-				09ACA51919D4157000C22FA2 /* WordTest.m in Sources */,
 				0932613B19BE442000C4DD53 /* Phoneme.m in Sources */,
 				0932612F19BE442000C4DD53 /* Word.m in Sources */,
 				0951F7C219A7F22100FD651C /* DBCoreDataStack.m in Sources */,
 				09510C9A19B07E3500FD651C /* spellingForMyKidsCoreDataModel.xcdatamodeld in Sources */,
-				09ACA51D19D4157000C22FA2 /* SpellingTest.m in Sources */,
+				090B5B2F19D9FD40000A7493 /* SpellingTest.m in Sources */,
+				090B5B2B19D9FD3F000A7493 /* WordTest.m in Sources */,
+				090B5B1319D562D2000A7493 /* Spelling+enhanced.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

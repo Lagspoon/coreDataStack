@@ -2,14 +2,14 @@
 //  Spelling.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 27/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Kid, Lesson, SpellingTest, Test, Word;
+@class Kid, Lesson, SpellingTest, Word, WordTest;
 
 @interface Spelling : NSManagedObject
 
@@ -40,8 +40,8 @@
 - (void)addWords:(NSSet *)values;
 - (void)removeWords:(NSSet *)values;
 
-- (void)addWordTestsObject:(Test *)value;
-- (void)removeWordTestsObject:(Test *)value;
+- (void)addWordTestsObject:(WordTest *)value;
+- (void)removeWordTestsObject:(WordTest *)value;
 - (void)addWordTests:(NSSet *)values;
 - (void)removeWordTests:(NSSet *)values;
 

@@ -2,7 +2,7 @@
 //  Spelling.m
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 27/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 #import "Kid.h"
 #import "Lesson.h"
 #import "SpellingTest.h"
-#import "WordTest.h"
 #import "Word.h"
+#import "WordTest.h"
 
 
 @implementation Spelling

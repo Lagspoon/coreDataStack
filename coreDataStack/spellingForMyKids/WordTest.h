@@ -2,7 +2,7 @@
 //  WordTest.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 25/09/2014.
+//  Created by Olivier Delecueillerie on 29/09/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSDate * endedAt;
 @property (nonatomic, retain) NSString * input;
 @property (nonatomic, retain) NSDate * startedAt;
+@property (nonatomic, retain) NSNumber * result;
 @property (nonatomic, retain) Kid *kid;
 @property (nonatomic, retain) Spelling *spelling;
 @property (nonatomic, retain) SpellingTest *spellingTest;

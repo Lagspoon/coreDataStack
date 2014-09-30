@@ -7,8 +7,10 @@
 //
 
 #import "SpellingTest+mode.h"
+#import "Kid+enhanced.h"
+#import "Spelling+enhanced.h"
 
-@implementation SpellingTest (mode)
+@implementation SpellingTest (enhanced)
 
 - (spellingTestLevel) upwardSpellingTestLevel {
     switch ([self.level intValue]) {
@@ -57,6 +59,35 @@
                 break;
         }
     }
+}
+
++ (SpellingTest *) spellingTestFor:(Kid *)kid spelling:(Spelling *)spelling {
+    NSManagedObjectContext *MOC = [kid managedObjectContext];
+    if (!(MOC == [spelling managedObjectContext])) {
+        NSLog(@"error in spellingTest creation because managedObjectContext of relationship object are different");
+        spelling = [spelling spellingInManagedObjectContext:MOC ];
+    }
+    SpellingTest *spellingTest = [NSEntityDescription insertNewObjectForEntityForName:@"SpellingTest" inManagedObjectContext:MOC];
+    spellingTest.kid = kid;
+    spellingTest.spelling = spelling;
+    
+    
+    //spellingTest.level = [
+    
+    NSMutableSet *spellingTests = [NSMutableSet setWithSet:spelling.spellingTests];
+    for (SpellingTest *spellingTestEach in spellingTests) {
+        if (!(spellingTestEach.kid == kid)) {
+            [spellingTests removeObject:spellingTestEach];
+        }
+    }
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"endedAt" ascending:YES]];
+    NSArray *arraySorted = [[spellingTests allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    SpellingTest *spellingTestLast = [arraySorted lastObject];
+    
+    spellingTest.level = [NSNumber numberWithInt:[spellingTestLast nextSpellingTestLevel]];
+    
+    return spellingTest;
 }
 
 @end

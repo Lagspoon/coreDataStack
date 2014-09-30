@@ -8,7 +8,7 @@
 
 #import "SpellingTest.h"
 
-@interface SpellingTest (mode)
+@interface SpellingTest (enhanced)
 
 typedef enum spellingTestLevel
 {
@@ -26,5 +26,6 @@ typedef enum spellingTestResult {
 } spellingTestResult;
 
 - (spellingTestLevel) nextSpellingTestLevel;
++ (SpellingTest *) spellingTestFor:(Kid *)kid spelling:(Spelling *)spelling;
 
 @end
