@@ -9,6 +9,15 @@
 #import "Spelling.h"
 
 @interface Spelling (enhanced)
-- (Spelling *) spellingInManagedObjectContext:(NSManagedObjectContext *) MOC;
 
+typedef enum spellingMedal {
+    spellingMedalEmpty = 0,
+    spellingMedalBronze = 1,
+    spellingMedalSilver = 2,
+    spellingMedalGold = 3
+} spellingMedal;
+
+
+- (Spelling *) spellingInManagedObjectContext:(NSManagedObjectContext *) MOC;
+- (spellingMedal) spellingMedalFor:(Kid *)kid;
 @end

@@ -2,14 +2,14 @@
 //  Word.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 02/10/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Grapheme, Kid, Phoneme, Spelling, Test;
+@class Grapheme, Kid, Phoneme, Spelling, WordTest;
 
 @interface Word : NSManagedObject
 
@@ -21,7 +21,7 @@
 @property (nonatomic, retain) NSSet *kids;
 @property (nonatomic, retain) NSOrderedSet *phonemes;
 @property (nonatomic, retain) NSSet *spelling;
-@property (nonatomic, retain) Test *tests;
+@property (nonatomic, retain) NSSet *wordTests;
 @end
 
 @interface Word (CoreDataGeneratedAccessors)
@@ -50,5 +50,10 @@
 - (void)removeSpellingObject:(Spelling *)value;
 - (void)addSpelling:(NSSet *)values;
 - (void)removeSpelling:(NSSet *)values;
+
+- (void)addWordTestsObject:(WordTest *)value;
+- (void)removeWordTestsObject:(WordTest *)value;
+- (void)addWordTests:(NSSet *)values;
+- (void)removeWordTests:(NSSet *)values;
 
 @end

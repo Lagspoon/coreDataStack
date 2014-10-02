@@ -11,6 +11,16 @@
 @interface WordTest (enhanced)
 
 
+typedef enum wordTestMistake {
+    wordTestMistakeAccent = 3,
+    wordTestMistakeLexical = 2,
+    wordTestMistakeHomophone = 1, 
+} wordTestMistake;
 
+
+typedef enum wordTestResult {
+    wordTestResultPass = 1,
+    wordTestResultFail = 0
+} wordTestResult;
 
 @end

@@ -2,7 +2,7 @@
 //  SpellingTest.m
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 29/09/2014.
+//  Created by Olivier Delecueillerie on 01/10/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -14,10 +14,11 @@
 
 @implementation SpellingTest
 
-@dynamic endedAt;
 @dynamic level;
 @dynamic result;
 @dynamic startedAt;
+@dynamic endedAt;
+@dynamic dayAt;
 @dynamic kid;
 @dynamic spelling;
 @dynamic wordTests;

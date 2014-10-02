@@ -19,13 +19,19 @@ typedef enum spellingTestLevel
 
 
 typedef enum spellingTestResult {
-    spellingTestResultA = 0,    //A  acquis
-    spellingTestResultB = 1,    //EA en cours acquisition
-    spellingTestResultC = 2,    //AR à revoir
-    spellingTestResultD = 3     //NA non acquis
+    spellingTestResultA = 3,    //A  acquis
+    spellingTestResultB = 2,    //EA en cours acquisition
+    spellingTestResultC = 1,    //AR à revoir
+    spellingTestResultD = 0     //NA non acquis
 } spellingTestResult;
 
-- (spellingTestLevel) nextSpellingTestLevel;
+
+@property (strong, nonatomic) NSDate *dayAt; //used for sections in table views
+
 + (SpellingTest *) spellingTestFor:(Kid *)kid spelling:(Spelling *)spelling;
+- (spellingTestLevel) nextSpellingTestLevel;
+- (void) setSpellingTestResult;
+- (NSString *) getSpellingTestResult;
+- (NSString *) getSpellingTestLevel;
 
 @end

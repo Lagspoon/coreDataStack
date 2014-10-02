@@ -2,7 +2,7 @@
 //  SpellingTest.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 29/09/2014.
+//  Created by Olivier Delecueillerie on 01/10/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -13,10 +13,11 @@
 
 @interface SpellingTest : NSManagedObject
 
-@property (nonatomic, retain) NSDate * endedAt;
 @property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSNumber * result;
 @property (nonatomic, retain) NSDate * startedAt;
+@property (nonatomic, retain) NSDate * endedAt;
+@property (nonatomic, retain) NSDate * dayAt;
 @property (nonatomic, retain) Kid *kid;
 @property (nonatomic, retain) Spelling *spelling;
 @property (nonatomic, retain) NSSet *wordTests;

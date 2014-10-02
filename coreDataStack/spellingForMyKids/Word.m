@@ -2,7 +2,7 @@
 //  Word.m
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 02/10/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -24,6 +24,6 @@
 @dynamic kids;
 @dynamic phonemes;
 @dynamic spelling;
-@dynamic tests;
+@dynamic wordTests;
 
 @end
