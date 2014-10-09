@@ -6,10 +6,11 @@
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
-#import "SpellingTest+mode.h"
+#import "SpellingTest+enhanced.h"
 #import "Kid+enhanced.h"
 #import "Spelling+enhanced.h"
 #import "WordTest+enhanced.h"
+
 
 @implementation SpellingTest (enhanced)
 
@@ -65,6 +66,32 @@
     self.dayAt = [self dateAtBeginningOfDayForDate:self.endedAt];
 }
 */
+
+
+/*///////////////////////////////////////////////////////////////////////////////////
+ List Management
+ ///////////////////////////////////////////////////////////////////////////////////*/
+- (NSArray *) lastSpellingTests {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SpellingTest"];
+    NSPredicate *predicateKid = [NSPredicate predicateWithFormat:@"kid ==%@", self.kid];
+    NSPredicate *predicateSpelling = [NSPredicate predicateWithFormat:@"spelling ==%@", self.spelling];
+    NSPredicate *predicateEndedAt = [NSPredicate predicateWithFormat:@"NOT endedAt==%@", nil];
+    NSPredicate *predicateSelf = [NSPredicate predicateWithFormat:@"NOT SELF==%@", self];
+    NSPredicate *predicateAnd = [NSCompoundPredicate andPredicateWithSubpredicates:@[predicateKid,predicateSpelling, predicateEndedAt, predicateSelf]];
+    NSSortDescriptor * sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"endedAt" ascending:NO];
+    
+    [request setPredicate:predicateAnd];
+    [request setSortDescriptors:@[sortDescriptor]];
+    
+    NSError *error;
+    return [self.managedObjectContext executeFetchRequest:request error:&error];
+    if (error) {
+        NSLog(@"error in lastSpellingTests %@", [error description]);
+    }
+}
+
+
+
 /*///////////////////////////////////////////////////////////////////////////////////
  Date Utilities
  ///////////////////////////////////////////////////////////////////////////////////*/
@@ -93,6 +120,37 @@
  Level & Result Utilities
  ///////////////////////////////////////////////////////////////////////////////////*/
 
+- (spellingTestMedal) spellingTestMedal {
+    
+    spellingTestMedal medal;
+    switch ([self nextSpellingTestLevel]) {
+        case spellingTestLevelEasy:
+            medal = spellingTestMedalEmpty;
+            break;
+            
+        case spellingTestLevelMedium:
+            medal = spellingTestMedalBronze;
+            break;
+            
+        case spellingTestLevelHard:{
+            NSArray *lastSpellingTests = [self lastSpellingTests];
+            SpellingTest *previousTest = [lastSpellingTests firstObject];
+            
+            NSLog(@"previoustest level %i result %i", [previousTest.level intValue], [previousTest.result intValue]);
+            if (([previousTest.level intValue] == spellingTestLevelHard)&&([previousTest.result intValue] == spellingTestResultA)) {
+                medal = spellingTestMedalGold;
+            } else {
+                medal = spellingTestMedalSilver;
+            }
+            break;
+        }
+            
+        default:
+            medal = spellingTestMedalEmpty;
+            break;
+    }
+    return medal;
+}
 
 - (spellingTestLevel) upwardSpellingTestLevel {
     switch ([self.level intValue]) {

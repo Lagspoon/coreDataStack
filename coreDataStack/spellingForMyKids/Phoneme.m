@@ -2,12 +2,12 @@
 //  Phoneme.m
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 08/09/2014.
+//  Created by Olivier Delecueillerie on 02/10/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
 #import "Phoneme.h"
-#import "Grapheme.h"
+#import "Lesson.h"
 #import "Word.h"
 
 
@@ -16,7 +16,7 @@
 @dynamic api;
 @dynamic audio;
 @dynamic type;
-@dynamic graphems;
 @dynamic words;
+@dynamic lessons;
 
 @end

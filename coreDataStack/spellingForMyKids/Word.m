@@ -7,7 +7,6 @@
 //
 
 #import "Word.h"
-#import "Grapheme.h"
 #import "Kid.h"
 #import "Phoneme.h"
 #import "Spelling.h"
@@ -20,7 +19,6 @@
 @dynamic image;
 @dynamic level;
 @dynamic name;
-@dynamic graphems;
 @dynamic kids;
 @dynamic phonemes;
 @dynamic spelling;

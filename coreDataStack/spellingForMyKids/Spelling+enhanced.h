@@ -7,17 +7,12 @@
 //
 
 #import "Spelling.h"
+#import "SpellingTest+enhanced.h"
+
 
 @interface Spelling (enhanced)
 
-typedef enum spellingMedal {
-    spellingMedalEmpty = 0,
-    spellingMedalBronze = 1,
-    spellingMedalSilver = 2,
-    spellingMedalGold = 3
-} spellingMedal;
-
-
 - (Spelling *) spellingInManagedObjectContext:(NSManagedObjectContext *) MOC;
-- (spellingMedal) spellingMedalFor:(Kid *)kid;
+- (spellingTestMedal) spellingMedalFor:(Kid *)kid;
+
 @end

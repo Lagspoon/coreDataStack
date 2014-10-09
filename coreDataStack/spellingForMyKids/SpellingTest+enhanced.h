@@ -25,10 +25,17 @@ typedef enum spellingTestResult {
     spellingTestResultD = 0     //NA non acquis
 } spellingTestResult;
 
+typedef enum spellingTestMedal {
+    spellingTestMedalEmpty = 0,
+    spellingTestMedalBronze = 1,
+    spellingTestMedalSilver = 2,
+    spellingTestMedalGold = 3
+} spellingTestMedal;
 
 @property (strong, nonatomic) NSDate *dayAt; //used for sections in table views
 
 + (SpellingTest *) spellingTestFor:(Kid *)kid spelling:(Spelling *)spelling;
+- (spellingTestMedal) spellingTestMedal;
 - (spellingTestLevel) nextSpellingTestLevel;
 - (void) setSpellingTestResult;
 - (NSString *) getSpellingTestResult;

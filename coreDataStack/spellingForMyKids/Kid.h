@@ -2,7 +2,7 @@
 //  Kid.h
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 23/09/2014.
+//  Created by Olivier Delecueillerie on 02/10/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -13,11 +13,9 @@
 
 @interface Kid : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * age;
 @property (nonatomic, retain) NSData * image;
-@property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSNumber * schoolLevel;
+@property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSSet *spellings;
 @property (nonatomic, retain) NSSet *spellingTests;
 @property (nonatomic, retain) NSSet *words;

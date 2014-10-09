@@ -2,7 +2,7 @@
 //  Kid.m
 //  coreDataStack
 //
-//  Created by Olivier Delecueillerie on 23/09/2014.
+//  Created by Olivier Delecueillerie on 02/10/2014.
 //  Copyright (c) 2014 Olivier Delecueillerie. All rights reserved.
 //
 
@@ -15,11 +15,9 @@
 
 @implementation Kid
 
-@dynamic age;
 @dynamic image;
-@dynamic level;
 @dynamic name;
-@dynamic schoolLevel;
+@dynamic level;
 @dynamic spellings;
 @dynamic spellingTests;
 @dynamic words;

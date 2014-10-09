@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Grapheme, Kid, Phoneme, Spelling, WordTest;
+@class Kid, Phoneme, Spelling, WordTest;
 
 @interface Word : NSManagedObject
 
@@ -17,7 +17,6 @@
 @property (nonatomic, retain) NSData * image;
 @property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *graphems;
 @property (nonatomic, retain) NSSet *kids;
 @property (nonatomic, retain) NSOrderedSet *phonemes;
 @property (nonatomic, retain) NSSet *spelling;
@@ -25,11 +24,6 @@
 @end
 
 @interface Word (CoreDataGeneratedAccessors)
-
-- (void)addGraphemsObject:(Grapheme *)value;
-- (void)removeGraphemsObject:(Grapheme *)value;
-- (void)addGraphems:(NSSet *)values;
-- (void)removeGraphems:(NSSet *)values;
 
 - (void)addKidsObject:(Kid *)value;
 - (void)removeKidsObject:(Kid *)value;

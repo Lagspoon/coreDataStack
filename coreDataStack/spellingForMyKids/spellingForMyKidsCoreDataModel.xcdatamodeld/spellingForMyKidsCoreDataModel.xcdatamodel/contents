@@ -1,44 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Grapheme" representedClassName="Grapheme" syncable="YES">
-        <attribute name="letters" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="phonem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Phoneme" inverseName="graphems" inverseEntity="Phoneme" syncable="YES"/>
-        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="graphems" inverseEntity="Word" syncable="YES"/>
-    </entity>
     <entity name="Kid" representedClassName="Kid" syncable="YES">
-        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES">
             <userInfo>
                 <entry key="type" value="image"/>
             </userInfo>
         </attribute>
-        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="level" optional="YES" transient="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="schoolLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="spellings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spelling" inverseName="kids" inverseEntity="Spelling" syncable="YES"/>
         <relationship name="spellingTests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpellingTest" inverseName="kid" inverseEntity="SpellingTest" syncable="YES"/>
         <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="kids" inverseEntity="Word" syncable="YES"/>
         <relationship name="wordTests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordTest" inverseName="kid" inverseEntity="WordTest" syncable="YES"/>
-        <userInfo>
-            <entry key="label" value="kid"/>
-        </userInfo>
     </entity>
     <entity name="Lesson" representedClassName="Lesson" syncable="YES">
-        <attribute name="contents" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="explanation" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="phonems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Phonem" inverseName="lessons" inverseEntity="Phonem" syncable="YES"/>
         <relationship name="spellings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spelling" inverseName="lesson" inverseEntity="Spelling" syncable="YES"/>
     </entity>
-    <entity name="Phoneme" representedClassName="Phoneme" syncable="YES">
+    <entity name="Phonem" representedClassName="Phoneme" syncable="YES">
         <attribute name="api" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="audio" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="graphems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Grapheme" inverseName="phonem" inverseEntity="Grapheme" syncable="YES"/>
+        <relationship name="lessons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lesson" inverseName="phonems" inverseEntity="Lesson" syncable="YES"/>
         <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="phonemes" inverseEntity="Word" syncable="YES"/>
     </entity>
     <entity name="Spelling" representedClassName="Spelling" syncable="YES">
         <attribute name="explication" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="kids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kid" inverseName="spellings" inverseEntity="Kid" syncable="YES"/>
@@ -71,11 +62,11 @@
                 <entry key="type" value="image"/>
             </userInfo>
         </attribute>
+        <attribute name="language" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="graphems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Grapheme" inverseName="words" inverseEntity="Grapheme" syncable="YES"/>
         <relationship name="kids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kid" inverseName="words" inverseEntity="Kid" syncable="YES"/>
-        <relationship name="phonemes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Phoneme" inverseName="words" inverseEntity="Phoneme" syncable="YES"/>
+        <relationship name="phonemes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Phonem" inverseName="words" inverseEntity="Phonem" syncable="YES"/>
         <relationship name="spelling" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spelling" inverseName="words" inverseEntity="Spelling" syncable="YES"/>
         <relationship name="wordTests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordTest" inverseName="word" inverseEntity="WordTest" syncable="YES"/>
         <userInfo>
@@ -96,13 +87,12 @@
         </userInfo>
     </entity>
     <elements>
-        <element name="Grapheme" positionX="-99" positionY="-504" width="128" height="88"/>
-        <element name="Kid" positionX="-173" positionY="-225" width="128" height="178"/>
-        <element name="Lesson" positionX="43" positionY="-522" width="128" height="118"/>
-        <element name="Phoneme" positionX="-216" positionY="-684" width="128" height="118"/>
-        <element name="Spelling" positionX="54" positionY="-216" width="128" height="163"/>
+        <element name="Kid" positionX="-173" positionY="-225" width="128" height="148"/>
+        <element name="Phonem" positionX="-216" positionY="-684" width="128" height="118"/>
+        <element name="Spelling" positionX="54" positionY="-216" width="128" height="178"/>
         <element name="SpellingTest" positionX="-135" positionY="20" width="128" height="163"/>
         <element name="Word" positionX="-198" positionY="-531" width="128" height="178"/>
         <element name="WordTest" positionX="-324" positionY="-207" width="128" height="30"/>
+        <element name="Lesson" positionX="-135" positionY="-531" width="128" height="118"/>
     </elements>
 </model>
